@@ -1,0 +1,211 @@
+/* =========================================
+   NEW CONTACT SECTION STYLES
+   ========================================= */
+
+.contact-layout-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    /* Un poco más a la izquierda para la info */
+    gap: 80px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
+/* --- Left Column: Info --- */
+.contact-title-main {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact-description {
+    color: var(--color-text-sec);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .contact-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.contact-icon-large {
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon-large svg {
+    width: 32px;
+    height: 32px;
+}
+
+.contact-info-block h4 {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.contact-info-block p,
+.contact-info-block a {
+    color: var(--color-text-sec);
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info-block a:hover {
+    color: var(--color-accent-blue);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+/* --- Right Column: Form Panel --- */
+.contact-form-panel {
+    padding: 50px;
+    background: #111;
+    /* Un poco más oscuro que el fondo general */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+.clean-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .contact-form-panel {
+        padding: 30px;
+    }
+}
+
+.clean-form .form-group-full {
+    grid-column: 1 / -1;
+}
+
+.input-clean {
+    width: 100%;
+    padding: 15px;
+    background: #fdfdfd;
+    /* Blanco roto para que resalte como en la imagen */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.input-clean::placeholder {
+    color: #999;
+}
+
+.input-clean:focus {
+    outline: none;
+    border-color: var(--color-accent-blue);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(24, 99, 220, 0.1);
+}
+
+.btn-clean-submit {
+    grid-column: 1 / -1;
+    background: var(--color-accent-blue);
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-self: start;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.btn-clean-submit:hover {
+    background: #fff;
+    color: var(--color-accent-blue);
+    transform: translateY(-2px);
+}
+
+/* --- Social Icons Restoration --- */
+.social-links-section {
+    margin-top: 30px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: var(--color-accent-blue);
+}
+
+.social-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-btn:hover {
+    background: #fff;
+    color: var(--color-accent-blue);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(24, 99, 220, 0.6);
+}

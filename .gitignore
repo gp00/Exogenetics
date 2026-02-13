@@ -1,0 +1,29 @@
+# OS files
+Thumbs.db
+db.results.d
+desktop.ini
+.DS_Store
+
+# Node modules (for audit scripts)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Folders for temporary assets (mentioned in GEMINI.md)
+borrame/
+**/borrame/
+images/borrame/
+
+# Logs
+*.log
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Antigravity specific (optional, but good practice for local config)
+.antigravityignore
+.agent/
