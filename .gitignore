@@ -27,3 +27,6 @@ images/borrame/
 # Antigravity specific (optional, but good practice for local config)
 .antigravityignore
 .agent/
+
+# Project tools
+tools/

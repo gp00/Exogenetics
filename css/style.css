@@ -346,7 +346,7 @@ section {
 .hero {
   min-height: 100vh;
   background-color: #000;
-  background-image: url('../images/hero_sphere_clean.png');
+  background-image: url('../images/hero_sphere_clean.webp');
   background-repeat: no-repeat;
   background-position: center 18%;
   background-size: contain;
@@ -1052,7 +1052,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-cta-final.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-cta-final.webp') center center / 100% 100% no-repeat;
   opacity: 0.5;
   z-index: 1;
 }
@@ -1207,12 +1207,12 @@ section {
 
 /* Panel Izquierdo: Profesionales */
 .panel-pro::before {
-  background-image: url('../images/Area_Clinica.jpg');
+  background-image: url('../images/Area_Clinica.webp');
 }
 
 /* Panel Derecho: Pacientes */
 .panel-patients::before {
-  background-image: url('../images/Area_Pacientes.jpg');
+  background-image: url('../images/Area_Pacientes.webp');
 }
 
 @media (min-width: 1024px) {
@@ -1289,7 +1289,7 @@ section {
 /* Intro Section index */
 .home-intro {
   padding: 80px 0 150px;
-  background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url('../fondos/Fondo_Scroll_9.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url('../fondos/Fondo_Scroll_9.webp') center/cover no-repeat fixed;
   position: relative;
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1766,7 +1766,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-hero-molecules.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-hero-molecules.webp') center center / 100% 100% no-repeat;
   opacity: 0.8;
   z-index: 1;
 }
@@ -2409,7 +2409,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-hero-molecules.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-hero-molecules.webp') center center / 100% 100% no-repeat;
   opacity: 0.8;
   z-index: 1;
 }
@@ -2524,7 +2524,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-mct-whatsapp.png') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-mct-whatsapp.webp') center center / 100% 100% no-repeat;
   opacity: 0.7;
   /* Increased for vibrancy */
   z-index: 1;
@@ -2732,7 +2732,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-hero-molecules.jpg') center/cover no-repeat;
+  background: url('../fondos/bg-hero-molecules.webp') center/cover no-repeat;
   opacity: 0.15;
   z-index: 1;
 }
@@ -2915,7 +2915,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-cta-final.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-cta-final.webp') center center / 100% 100% no-repeat;
   opacity: 0.5;
   z-index: 1;
 }
@@ -3496,7 +3496,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-cta-final.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-cta-final.webp') center center / 100% 100% no-repeat;
   opacity: 0.5;
   z-index: 1;
 }
@@ -3572,7 +3572,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-hero-molecules.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-hero-molecules.webp') center center / 100% 100% no-repeat;
   opacity: 0.8;
   z-index: 1;
 }
@@ -3954,7 +3954,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-intimate-health.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-intimate-health.webp') center center / 100% 100% no-repeat;
   opacity: 0.5;
   z-index: 1;
 }
@@ -4007,7 +4007,7 @@ td strong {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../fondos/bg-cta-final.jpg') center center / 100% 100% no-repeat;
+  background: url('../fondos/bg-cta-final.webp') center center / 100% 100% no-repeat;
   opacity: 0.5;
   z-index: 1;
 }

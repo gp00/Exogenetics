@@ -108,16 +108,17 @@ When assisting with this project:
 
 ## 8. Tareas Pendientes
 
-### 8.1. Migración Crítica a Formato WebP (Fase Final)
-Al concluir el desarrollo y tener todos los activos visuales definitivos, se realizará una sustitución masiva de imágenes para optimizar el rendimiento.
+### 8.1. Optimización WebP y Performance (Completado ✅)
+Se ha realizado una migración masiva de activos a formato WebP para maximizar la velocidad de carga y cumplir con los Core Web Vitals.
 
-*   **Objetivo:** Reducir el peso total de activos de ~21.2 MB a ~2.8 MB (ahorro estimado del 87%).
-*   **Alcance:** 
-    *   Convertir todas las imágenes PNG (incluyendo logos e iconos con transparencia) a `.webp`.
-    *   Actualizar todas las referencias en HTML y CSS.
-    *   Mover los PNGs originales a la carpeta `borrame` para limpieza.
-*   **Impacto Visual:** Nulo. WebP mantendrá las transparencias de los iconos y la fidelidad de los gradientes neón.
-*   **Momento de Ejecución:** Una vez finalizadas todas las landings y aprobados los contenidos visuales, para evitar redundancia de procesos.
+*   **Estado:** Finalizado el 13/02/2026.
+*   **Resultados de la Auditoría:**
+    *   **Imágenes Procesadas:** 69 archivos.
+    *   **Peso Original:** 38.42 MB.
+    *   **Peso WebP:** 7.93 MB.
+    *   **Ahorro Total:** **30.49 MB (79.37% de ganancia)**.
+*   **Herramienta de Mantenimiento:** Ubicada en `/tools/image_optimizer.js`. Este script basado en `Sharp` permite convertir nuevas imágenes y actualizar automáticamente las referencias en HTML/CSS.
+*   **Impacto Visual:** Nulo. Se mantiene la transparencia y fidelidad de los gradientes neón.
 
 ### 8.2. Otras Optimizaciones
 - **Auditoría de Assets:** Mantener la carpeta `images/` libre de archivos huérfanos utilizando el protocolo de limpieza en `images/borrame/`.
