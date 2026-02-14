@@ -37,7 +37,8 @@ All modifications must adhere to the **Protocolo de Automatización**.
 - **Semantics:** Use `<main>`, `<section>`, `<header>`, `<footer>`, and proper `h1-h3` hierarchy.
 - **CSS Architecture:** Use **Namespacing** (e.g., `.prp-page`) for specialized landings. Keep `style.css` light by avoiding redundant blank lines and grouping by logic.
 - **SEO & A11y:** Descriptive `alt` attributes, unmasked text, and semantic structure.
-- **Performance:** Aggressive image optimization and minimized code (clean CSS).
+- **Performance:** Aggressive image optimization and minimized code (clean CSS). Usar el skill `optimizar-activos-webp` para gestionar activos visuales.
+- **Browser Interaction:** Para interactuar con la web (auditorías, testing, capturas), se debe usar **obligatoriamente** el skill `agent-browser`. Es superior para manejar estados, referencias de elementos internos y automatización de flujos complejos.
 
 ### CSS Design Tokens:
 - **Primary Background:** `#000000`
