@@ -17,7 +17,10 @@
 - `pacientesPRP.html`: Deep-dive into PRP therapy for patients.
 - `pacientesMCT.html`: Deep-dive into MCT (Exosomes) therapy.
 - `pacientesQN.html`: Pathologies and solutions mapping ("¿Qué necesitas?").
-- `Profesionales.html`: Restricted area for clinical information (skeleton).
+- `Profesionales.html`: Restricted area for clinical information (Regenerative Precision Medicine).
+- `ProfesionalesPRP.html`: Technical page for SBL.PRP.3 system.
+- `ProfesionalesMCT.html`: Technical page for Metacell Technology and Exosomes.
+- `ProfesionalesEC.html`: Scientific Evidence repository for professionals.
 - `css/style.css`: Source of truth for styles, using namespacing for landings.
 - `js/script.js`: Logic for animations, form handling, and mobile navigation.
 - `PROTOCOLO_AUTOMATIZACION_DISENO.md`: Workflow for Image-to-Code implementation.
@@ -72,15 +75,32 @@ Página interactiva "¿Qué necesitas?".
 - **Enfoque:** Mapeo visual del cuerpo humano identificando puntos de dolor y soluciones específicas.
 - **Secciones:** Articulaciones/Músculos, Piel/Cabello y Salud Íntima.
 
-### 4.6. Área de Profesionales (`Profesionales.html`)
-Skeleton destinado a contenido clínico avanzado. Actualmente mantiene la estructura global (header/footer) para coherencia visual.
+### 4.6. Área de Profesionales (Ecosistema Clínico)
+Portal avanzado para facultativos con terminología técnica rigurosa.
+- **Profesionales.html**: Foco en Medicina Regenerativa de Precisión.
+- **ProfesionalesPRP.html**: Detalle del sistema SBL.PRP.3 de alta concentración.
+- **ProfesionalesMCT.html**: Exosomas y Metacell Technology (MTC).
+- **ProfesionalesEC.html**: Repositorio de Evidencias Científicas y estudios clínicos.
 
-### 4.7. Mapa de Navegación y Enlaces
-Todas las páginas mantienen una **Header Fijo** con un sistema de navegación redundante:
-- **Logo:** Retorno a `index.html`.
-- **Menú Pacientes (Dropdown):** Acceso directo a `pacientes.html`, `pacientesPRP.html`, `pacientesMCT.html` y `pacientesQN.html`.
-- **Enlace Profesionales:** Acceso a `Profesionales.html`.
-- **Anclas Globales:** El header incluye enlaces a `#quienes-somos` y `#contacto` que redirigen al `index.html` desde cualquier subpágina.
+### 4.7. Mapa de Navegación y Reglas de UX
+El sistema de navegación es dinámico y se adapta al contexto del usuario (Paciente vs Profesional) para evitar redundancias.
+
+#### 4.7.1 Regla de Oro: Prohibición de Auto-enlaces
+Ninguna página debe mostrar en su menú una opción que apunte a sí misma. Esto garantiza una interfaz limpia y evita bucles de navegación innecesarios.
+
+#### 4.7.2 Nomenclatura Adaptativa
+- **En Portal/Profesionales**: El acceso a la sección de pacientes se denomina **PACIENTES**.
+- **En Páginas Internas de Pacientes**: El menú se denomina **¿Cómo funciona?** para guiar el aprendizaje.
+- **En Área Profesional**: El menú de servicios se denomina **¿CÓMO FUNCIONA?** (en mayúsculas) y despliega opciones técnicas: **PRP de ALTA CONCENTRACIÓN (SBL.PRP.3)** y **EXOSOMAS Y METACELL TECHNOLOGY (MTC)**.
+
+#### 4.7.3 Orden Estándar de Menú
+1. **Inicio** (Visible en todas las subpáginas para retorno rápido).
+2. **QUIENES SOMOS** (Ancla al manifiesto en `index.html`).
+3. **Sección Principal Contextual** (Profesionales o Pacientes según la rama).
+4. **Sección Complementaria**:
+   - **Para Pacientes**: ¿Qué necesitas? (Mapeo de patologías).
+   - **Para Profesionales**: **EVIDENCIAS CIENTÍFICAS** (Visible como enlace directo en todas las subpáginas profesionales excepto en `ProfesionalesEC.html`).
+5. **Contacto** (Resaltado en Magenta).
 
 
 ---

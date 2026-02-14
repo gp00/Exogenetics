@@ -4208,3 +4208,41 @@ td strong {
   color: #1863DC;
   transform: translateY(-5px);
 }
+
+/* ==========================================================================
+   SITE FOOTER
+   ========================================================================== */
+.site-footer {
+  padding: 60px 0 40px;
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #555;
+  font-size: 0.85rem;
+  font-family: var(--font-main);
+  list-style: none;
+}
+
+.footer-content span {
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.footer-content span:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-accent-blue);
+  border-radius: 50%;
+  margin: 0 6px;
+  vertical-align: middle;
+  box-shadow: 0 0 6px var(--color-accent-blue);
+}
