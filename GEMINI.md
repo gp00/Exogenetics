@@ -17,6 +17,7 @@
 - `pacientesPRP.html`: Deep-dive into PRP therapy for patients.
 - `pacientesMCT.html`: Deep-dive into MCT (Exosomes) therapy.
 - `pacientesQN.html`: Pathologies and solutions mapping ("¿Qué necesitas?").
+- `Profesionales.html`: Restricted area for clinical information (skeleton).
 - `css/style.css`: Source of truth for styles, using namespacing for landings.
 - `js/script.js`: Logic for animations, form handling, and mobile navigation.
 - `PROTOCOLO_AUTOMATIZACION_DISENO.md`: Workflow for Image-to-Code implementation.
@@ -52,13 +53,35 @@ Diseñada para establecer autoridad tecnológica y presentar las soluciones de i
 - **Productos Destacados**: "EL ESTÁNDAR DE ORO EN MEDICINA AUTÓLOGA". Tarjetas técnicas de alta definición para SBL.PRP.3 y MCT SYSTEM & EXOSOMAS.
 
 ### 4.2. Página Pacientes (`pacientes.html`)
-La página `pacientes.html` se organiza en secciones que responden a las dudas del usuario sin tecnicismos excesivos:
+La página `pacientes.html` es el punto de entrada educativo. Se enfoca en conceptos simples y analogías (obreros/arquitectos) para explicar la medicina regenerativa.
+- **Secciones:** Desde "¿Qué es el PRP?" hasta el proceso de una hora "Entras caminando y sales caminando".
+- **Visuales:** Uso intensivo de gemas decorativas y diagramas de procesos.
 
-- **Sección A: INICIO (Divulgación)**: Concepto "Tu cuerpo tiene el poder de curarse". Introducción visual y analogías.
-- **Sección B: ¿CÓMO FUNCIONA?**: Desglose de terapias (PRP y MCT/Exosomas) y sus diferencias en lenguaje sencillo.
-- **Sección C: ¿QUÉ ME PASA? (Soluciones)**: Mapeo de aplicaciones clínicas por problema (Traumatología, Estética, Salud Íntima, Heridas).
-- **Sección D: TUS DUDAS (Seguridad)**: FAQ sobre seguridad, dolor y tiempos del proceso.
-- **Sección E: ENCUENTRA TU CENTRO**: Localizador de centros acreditados que utilizan tecnología SBL.
+### 4.3. Profundización PRP (`pacientesPRP.html`)
+Página técnica-educativa sobre el Plasma Rico en Plaquetas.
+- **Enfoque:** "Tu sangre, tu medicina". Explica el factor de concentración 5.4x y la pureza del sistema (eliminación de glóbulos rojos).
+- **Contenido:** Desglose de aplicaciones en Traumatología, Estética, Heridas y Salud Íntima.
+
+### 4.4. Profundización MCT (`pacientesMCT.html`)
+Enfoque en la tecnología de Exosomas y señalización celular.
+- **Enfoque:** "Más allá de las células". Analogía del "Whatsapp de tu cuerpo" y el "Arquitecto" vs "Ladrillos".
+- **Tecnología:** Explica el uso de luz azul y temperatura para la activación celular.
+
+### 4.5. Soluciones por Patología (`pacientesQN.html`)
+Página interactiva "¿Qué necesitas?".
+- **Enfoque:** Mapeo visual del cuerpo humano identificando puntos de dolor y soluciones específicas.
+- **Secciones:** Articulaciones/Músculos, Piel/Cabello y Salud Íntima.
+
+### 4.6. Área de Profesionales (`Profesionales.html`)
+Skeleton destinado a contenido clínico avanzado. Actualmente mantiene la estructura global (header/footer) para coherencia visual.
+
+### 4.7. Mapa de Navegación y Enlaces
+Todas las páginas mantienen una **Header Fijo** con un sistema de navegación redundante:
+- **Logo:** Retorno a `index.html`.
+- **Menú Pacientes (Dropdown):** Acceso directo a `pacientes.html`, `pacientesPRP.html`, `pacientesMCT.html` y `pacientesQN.html`.
+- **Enlace Profesionales:** Acceso a `Profesionales.html`.
+- **Anclas Globales:** El header incluye enlaces a `#quienes-somos` y `#contacto` que redirigen al `index.html` desde cualquier subpágina.
+
 
 ---
 
@@ -120,7 +143,18 @@ Se ha realizado una migración masiva de activos a formato WebP para maximizar l
 *   **Herramienta de Mantenimiento:** Ubicada en `/tools/image_optimizer.js`. Este script basado en `Sharp` permite convertir nuevas imágenes y actualizar automáticamente las referencias en HTML/CSS.
 *   **Impacto Visual:** Nulo. Se mantiene la transparencia y fidelidad de los gradientes neón.
 
-### 8.2. Otras Optimizaciones
+### 8.2. Sistema de Contacto por Email (Completado ✅)
+Se ha implementado un sistema de envío de formularios sin necesidad de backend propio para mantener la arquitectura estática del proyecto.
+
+*   **Servicio Utilizado:** [Web3Forms](https://web3forms.com/).
+*   **Access Key:** `f0f9e572-238e-4a9e-858e-f33b678f8c89`.
+*   **Arquitectura de Envío:**
+    *   **Frontend:** Formulario HTML5 semántico con validación nativa.
+    *   **Lógica:** Peticiones asíncronas vía `fetch` (AJAX) en `js/script.js`.
+    *   **UX:** Feedback visual en tiempo real (Estados: Enviando, Éxito, Error) sin recarga de página.
+    *   **Diseño:** Panel de contacto ensanchado (`grid-template-columns: 1fr 1.3fr`) para una presencia visual más robusta.
+
+### 8.3. Otras Optimizaciones
 - **Auditoría de Assets:** Mantener la carpeta `images/` libre de archivos huérfanos utilizando el protocolo de limpieza en `images/borrame/`.
 - **Refactorización Hero:** Pendiente migrar el Hero de `pacientes.html` al sistema de Grid fluido (Fase 2 de Refactorización).
 

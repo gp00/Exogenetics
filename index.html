@@ -324,24 +324,30 @@
                             INFORMACIÓN</h2>
 
                         <form id="new-contact-form" class="clean-form">
+                            <input type="hidden" name="access_key" value="f0f9e572-238e-4a9e-858e-f33b678f8c89">
+
                             <div>
-                                <input type="text" placeholder="Tu Nombre" required class="input-clean">
+                                <input type="text" name="name" placeholder="Tu Nombre" required class="input-clean">
                             </div>
 
                             <div>
-                                <input type="email" placeholder="Tu correo" required
+                                <input type="email" name="email" placeholder="Tu correo" required
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                     title="Por favor, introduce un correo electrónico válido (ej: nombre@dominio.com)"
                                     class="input-clean">
                             </div>
 
                             <div class="form-group-full">
-                                <input type="text" placeholder="Asunto" required class="input-clean">
+                                <input type="text" name="subject" placeholder="Asunto" required class="input-clean">
                             </div>
 
                             <div class="form-group-full">
-                                <textarea placeholder="Mensaje" rows="5" class="input-clean"
+                                <textarea name="message" placeholder="Mensaje" rows="5" class="input-clean"
                                     style="resize: none;"></textarea>
+                            </div>
+
+                            <div id="form-result"
+                                style="margin-top: 15px; font-size: 0.9rem; text-align: center; grid-column: 1 / -1;">
                             </div>
 
                             <button type="submit" class="btn-clean-submit">ENVIAR</button>

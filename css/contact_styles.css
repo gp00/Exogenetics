@@ -4,9 +4,10 @@
 
 .contact-layout-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    /* Un poco más a la izquierda para la info */
-    gap: 80px;
+    grid-template-columns: 1fr 1.15fr;
+    /* Un punto medio más equilibrado */
+    gap: 65px;
+    /* Restauramos un poco más de aire entre columnas */
     align-items: start;
 }
 
