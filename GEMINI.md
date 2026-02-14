@@ -32,6 +32,7 @@
 All modifications must adhere to the **Protocolo de Automatización**.
 
 ### Coding Standards:
+- **Git Commits:** Todas las descripciones y mensajes de commit deben escribirse **siempre en español**.
 - **Responsive:** Fluid layouts using Flexbox and CSS Grid. Active mobile menu at 1150px to prevent nav-link collision.
 - **Semantics:** Use `<main>`, `<section>`, `<header>`, `<footer>`, and proper `h1-h3` hierarchy.
 - **CSS Architecture:** Use **Namespacing** (e.g., `.prp-page`) for specialized landings. Keep `style.css` light by avoiding redundant blank lines and grouping by logic.
