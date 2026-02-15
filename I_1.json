@@ -1,0 +1,1754 @@
+[
+  {
+    "id": "crop-p1-1771175408950-0",
+    "pageNumber": 1,
+    "type": "IMAGE",
+    "label": "Logotipo de Solutions Biomedical Lab",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p1-1771175408950-0.webp",
+    "dimensions": {
+      "width": 660.4799999999999,
+      "height": 336.384
+    }
+  },
+  {
+    "id": "crop-p1-1771175409104-1",
+    "pageNumber": 1,
+    "type": "TEXT",
+    "label": "Título principal de la diapositiva",
+    "detectedText": "MEDICINA REGENERATIVA DE PRECISIÓN: ALGORITMOS TERAPÉUTICOS AVANZADOS",
+    "imageUrl": "images/pro_v1_crop-p1-1771175409104-1.webp",
+    "dimensions": {
+      "width": 3124.896,
+      "height": 430.848
+    }
+  },
+  {
+    "id": "crop-p1-1771175409153-2",
+    "pageNumber": 1,
+    "type": "TEXT",
+    "label": "Subtítulo descriptivo",
+    "detectedText": "DEL TRATAMIENTO PALIATIVO A LA BIOESTIMULACIÓN ACTIVA E INMUNOMODULACIÓN",
+    "imageUrl": "images/pro_v1_crop-p1-1771175409153-2.webp",
+    "dimensions": {
+      "width": 2840.064,
+      "height": 218.8800000000002
+    }
+  },
+  {
+    "id": "crop-p1-1771175409188-3",
+    "pageNumber": 1,
+    "type": "TEXT",
+    "label": "Lista de puntos informativos",
+    "detectedText": "• Actualización del arsenal terapéutico para especialistas.\n• Enfoque en mecanismos biológicos: PRP de Alta Concentración, Monocitos y Exosomas Autólogos.\n• Referencia Tecnológica: Solutions Biomedical Lab (SBL).",
+    "imageUrl": "images/pro_v1_crop-p1-1771175409188-3.webp",
+    "dimensions": {
+      "width": 3207.4559999999997,
+      "height": 361.72800000000007
+    }
+  },
+  {
+    "id": "crop-p1-1771175409232-4",
+    "pageNumber": 1,
+    "type": "IMAGE",
+    "label": "Gráfico decorativo de ADN",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p1-1771175409232-4.webp",
+    "dimensions": {
+      "width": 1453.0559999999998,
+      "height": 2304
+    }
+  },
+  {
+    "id": "crop-p1-1771175409322-5",
+    "pageNumber": 1,
+    "type": "IMAGE",
+    "label": "Identificador de NotebookLM",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p1-1771175409322-5.webp",
+    "dimensions": {
+      "width": 293.0879999999998,
+      "height": 46.08000000000004
+    }
+  },
+  {
+    "id": "crop-p2-1771175430182-0",
+    "pageNumber": 2,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "EVOLUCIÓN DEL PARADIGMA TERAPÉUTICO",
+    "imageUrl": "images/pro_v1_crop-p2-1771175430182-0.webp",
+    "dimensions": {
+      "width": 3479.9040000000005,
+      "height": 205.05599999999998
+    }
+  },
+  {
+    "id": "crop-p2-1771175430340-1",
+    "pageNumber": 2,
+    "type": "TEXT",
+    "label": "Subtítulo enfoque tradicional",
+    "detectedText": "ENFOQUE TRADICIONAL (PALIATIVO)",
+    "imageUrl": "images/pro_v1_crop-p2-1771175430340-1.webp",
+    "dimensions": {
+      "width": 1601.664,
+      "height": 99.07200000000003
+    }
+  },
+  {
+    "id": "crop-p2-1771175430363-2",
+    "pageNumber": 2,
+    "type": "TEXT",
+    "label": "Subtítulo enfoque regenerativo",
+    "detectedText": "ENFOQUE REGENERATIVO (MODIFICADOR)",
+    "imageUrl": "images/pro_v1_crop-p2-1771175430363-2.webp",
+    "dimensions": {
+      "width": 1737.8879999999997,
+      "height": 99.07200000000003
+    }
+  },
+  {
+    "id": "crop-p2-1771175430381-3",
+    "pageNumber": 2,
+    "type": "IMAGE",
+    "label": "Ilustración de articulación e inyección",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p2-1771175430381-3.webp",
+    "dimensions": {
+      "width": 1688.352,
+      "height": 859.3920000000002
+    }
+  },
+  {
+    "id": "crop-p2-1771175430425-4",
+    "pageNumber": 2,
+    "type": "IMAGE",
+    "label": "Ilustración de células y señalización",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p2-1771175430425-4.webp",
+    "dimensions": {
+      "width": 1688.3519999999996,
+      "height": 859.3920000000002
+    }
+  },
+  {
+    "id": "crop-p2-1771175430498-5",
+    "pageNumber": 2,
+    "type": "IMAGE",
+    "label": "Línea divisoria vertical",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p2-1771175430498-5.webp",
+    "dimensions": {
+      "width": 33.02400000000003,
+      "height": 1670.4
+    }
+  },
+  {
+    "id": "crop-p2-1771175430513-6",
+    "pageNumber": 2,
+    "type": "TEXT",
+    "label": "Descripción enfoque tradicional",
+    "detectedText": "• Herramientas: Viscosuplementación, Corticoides, AINEs.\n• Mecanismo: Lubricación mecánica y supresión sintomática.\n• Limitación: No modifica la historia natural. Riesgo de condrotoxicidad. “Silenciar el síntoma”.",
+    "imageUrl": "images/pro_v1_crop-p2-1771175430513-6.webp",
+    "dimensions": {
+      "width": 1717.248,
+      "height": 539.1360000000002
+    }
+  },
+  {
+    "id": "crop-p2-1771175430547-7",
+    "pageNumber": 2,
+    "type": "TEXT",
+    "label": "Descripción enfoque regenerativo",
+    "detectedText": "• Herramientas: PRP de Alta Concentración, Monocitos, Exosomas.\n• Mecanismo: Señalización paracrina, inmunomodulación y síntesis de ECM.\n• Objetivo: Restitución de la homeostasis tisular. “Reactivar la reparación endógena”.",
+    "imageUrl": "images/pro_v1_crop-p2-1771175430547-7.webp",
+    "dimensions": {
+      "width": 1713.1199999999997,
+      "height": 539.1360000000002
+    }
+  },
+  {
+    "id": "crop-p2-1771175430583-8",
+    "pageNumber": 2,
+    "type": "TEXT",
+    "label": "Marca de agua NotebookLM",
+    "detectedText": "NotebookLM",
+    "imageUrl": "images/pro_v1_crop-p2-1771175430583-8.webp",
+    "dimensions": {
+      "width": 297.2159999999998,
+      "height": 39.168000000000035
+    }
+  },
+  {
+    "id": "crop-p3-1771175457331-0",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "LA TRIADA DE LA PRECISIÓN BIOLÓGICA",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457331-0.webp",
+    "dimensions": {
+      "width": 2959.776,
+      "height": 182.01599999999996
+    }
+  },
+  {
+    "id": "crop-p3-1771175457497-1",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Subtítulo",
+    "detectedText": "POTENCIA, MODULACIÓN Y SEÑALIZACIÓN",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457497-1.webp",
+    "dimensions": {
+      "width": 2262.1440000000002,
+      "height": 103.67999999999996
+    }
+  },
+  {
+    "id": "crop-p3-1771175457527-2",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Título Regeneración Estructural",
+    "detectedText": "REGENERACIÓN ESTRUCTURAL (SBL.PRP.3)",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457527-2.webp",
+    "dimensions": {
+      "width": 957.6959999999999,
+      "height": 195.84000000000003
+    }
+  },
+  {
+    "id": "crop-p3-1771175457543-3",
+    "pageNumber": 3,
+    "type": "IMAGE",
+    "label": "Ilustración plaqueta",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p3-1771175457543-3.webp",
+    "dimensions": {
+      "width": 536.64,
+      "height": 490.75200000000007
+    }
+  },
+  {
+    "id": "crop-p3-1771175457561-4",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Clave sección 1",
+    "detectedText": "Clave: Concentración.",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457561-4.webp",
+    "dimensions": {
+      "width": 730.656,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p3-1771175457570-5",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Función sección 1",
+    "detectedText": "Función: Aporte masivo de Factores de Crecimiento (GF) para fases proliferativas.",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457570-5.webp",
+    "dimensions": {
+      "width": 920.544,
+      "height": 237.31199999999995
+    }
+  },
+  {
+    "id": "crop-p3-1771175457593-6",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Título Inmunomodulación",
+    "detectedText": "INMUNOMODULACIÓN (SBL.PRP.3+M)",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457593-6.webp",
+    "dimensions": {
+      "width": 759.552,
+      "height": 195.84000000000003
+    }
+  },
+  {
+    "id": "crop-p3-1771175457607-7",
+    "pageNumber": 3,
+    "type": "IMAGE",
+    "label": "Ilustración monocito",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p3-1771175457607-7.webp",
+    "dimensions": {
+      "width": 532.5119999999998,
+      "height": 490.75200000000007
+    }
+  },
+  {
+    "id": "crop-p3-1771175457627-8",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Clave sección 2",
+    "detectedText": "Clave: Monocitos.",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457627-8.webp",
+    "dimensions": {
+      "width": 549.0239999999998,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p3-1771175457637-9",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Función sección 2",
+    "detectedText": "Función: Resolución de la inflamación crónica (Polarización M1 -> M2).",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457637-9.webp",
+    "dimensions": {
+      "width": 866.8799999999999,
+      "height": 237.31199999999995
+    }
+  },
+  {
+    "id": "crop-p3-1771175457657-10",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Título Reprogramación Celular",
+    "detectedText": "REPROGRAMACIÓN CELULAR (MCT EXOSOMAS)",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457657-10.webp",
+    "dimensions": {
+      "width": 949.4399999999999,
+      "height": 195.84000000000003
+    }
+  },
+  {
+    "id": "crop-p3-1771175457676-11",
+    "pageNumber": 3,
+    "type": "IMAGE",
+    "label": "Ilustración exosomas",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p3-1771175457676-11.webp",
+    "dimensions": {
+      "width": 487.104,
+      "height": 520.7040000000001
+    }
+  },
+  {
+    "id": "crop-p3-1771175457695-12",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Clave sección 3",
+    "detectedText": "Clave: Señalización Avanzada.",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457695-12.webp",
+    "dimensions": {
+      "width": 945.3119999999999,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p3-1771175457704-13",
+    "pageNumber": 3,
+    "type": "TEXT",
+    "label": "Función sección 3",
+    "detectedText": "Función: Instrucciones complejas (miRNA, mRNA) para tejidos senescentes.",
+    "imageUrl": "images/pro_v1_crop-p3-1771175457704-13.webp",
+    "dimensions": {
+      "width": 825.6000000000003,
+      "height": 237.31199999999995
+    }
+  },
+  {
+    "id": "crop-p3-1771175457727-14",
+    "pageNumber": 3,
+    "type": "IMAGE",
+    "label": "Logo NotebookLM",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p3-1771175457727-14.webp",
+    "dimensions": {
+      "width": 280.7039999999998,
+      "height": 41.47200000000004
+    }
+  },
+  {
+    "id": "crop-p4-1771175478594-0",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "SBL.PRP.3: BIOESTIMULACIÓN DIRECTA DOSIS-DEPENDIENTE",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478594-0.webp",
+    "dimensions": {
+      "width": 3760.6079999999997,
+      "height": 142.848
+    }
+  },
+  {
+    "id": "crop-p4-1771175478736-1",
+    "pageNumber": 4,
+    "type": "IMAGE",
+    "label": "Ilustración de tubo de ensayo",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p4-1771175478736-1.webp",
+    "dimensions": {
+      "width": 1869.9840000000002,
+      "height": 1728
+    }
+  },
+  {
+    "id": "crop-p4-1771175478829-2",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Etiqueta Volumen PRP",
+    "detectedText": "Volumen PRP Concentrado ≈ 4ml",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478829-2.webp",
+    "dimensions": {
+      "width": 668.736,
+      "height": 147.45600000000002
+    }
+  },
+  {
+    "id": "crop-p4-1771175478844-3",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Etiqueta Gel Tixotrópico",
+    "detectedText": "Gel Tixotrópico",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478844-3.webp",
+    "dimensions": {
+      "width": 516,
+      "height": 57.60000000000005
+    }
+  },
+  {
+    "id": "crop-p4-1771175478858-4",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Etiqueta Alta Recuperación",
+    "detectedText": "Alta Recuperación",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478858-4.webp",
+    "dimensions": {
+      "width": 639.8400000000001,
+      "height": 57.60000000000005
+    }
+  },
+  {
+    "id": "crop-p4-1771175478875-5",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Párrafo Premisa Clínica",
+    "detectedText": "Premisa Clínica: La respuesta tisular es dosis-dependiente.",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478875-5.webp",
+    "dimensions": {
+      "width": 1614.048,
+      "height": 186.62400000000002
+    }
+  },
+  {
+    "id": "crop-p4-1771175478898-6",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Subtítulo Especificaciones Técnicas",
+    "detectedText": "Especificaciones Técnicas:",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478898-6.webp",
+    "dimensions": {
+      "width": 1180.6080000000002,
+      "height": 87.55199999999995
+    }
+  },
+  {
+    "id": "crop-p4-1771175478910-7",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Ítem lista Factor de Concentración",
+    "detectedText": "- Factor de Concentración: 5.4x (vs 2-3x estándar).",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478910-7.webp",
+    "dimensions": {
+      "width": 1708.9919999999997,
+      "height": 182.01600000000002
+    }
+  },
+  {
+    "id": "crop-p4-1771175478931-8",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Ítem lista Recuperación Plaquetaria",
+    "detectedText": "- Recuperación Plaquetaria: >80%.",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478931-8.webp",
+    "dimensions": {
+      "width": 1411.7759999999998,
+      "height": 80.63999999999982
+    }
+  },
+  {
+    "id": "crop-p4-1771175478943-9",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Ítem lista Pureza",
+    "detectedText": "- Pureza: Eliminación del 99.7% de glóbulos rojos (0.28% RBC residual).",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478943-9.webp",
+    "dimensions": {
+      "width": 1597.536,
+      "height": 184.3199999999999
+    }
+  },
+  {
+    "id": "crop-p4-1771175478965-10",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Párrafo Mecanismo",
+    "detectedText": "Mecanismo: Degranulación de gránulos alfa → Liberación masiva de PDGF, TGF-β, VEGF.",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478965-10.webp",
+    "dimensions": {
+      "width": 1671.8400000000001,
+      "height": 288
+    }
+  },
+  {
+    "id": "crop-p4-1771175478985-11",
+    "pageNumber": 4,
+    "type": "TEXT",
+    "label": "Logotipo pie de página",
+    "detectedText": "NotebookLM",
+    "imageUrl": "images/pro_v1_crop-p4-1771175478985-11.webp",
+    "dimensions": {
+      "width": 288.9599999999998,
+      "height": 55.29600000000005
+    }
+  },
+  {
+    "id": "crop-p5-1771175520600-0",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "SBL.PRP.3+M: RESOLVIENDO LA INFLAMACIÓN CRÓNICA",
+    "imageUrl": "images/pro_v1_crop-p5-1771175520600-0.webp",
+    "dimensions": {
+      "width": 3673.9199999999996,
+      "height": 207.35999999999999
+    }
+  },
+  {
+    "id": "crop-p5-1771175520783-1",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Subtítulo",
+    "detectedText": "INMUNOMODULACIÓN Y POLARIZACIÓN DE MACRÓFAGOS",
+    "imageUrl": "images/pro_v1_crop-p5-1771175520783-1.webp",
+    "dimensions": {
+      "width": 3096,
+      "height": 126.71999999999998
+    }
+  },
+  {
+    "id": "crop-p5-1771175520808-2",
+    "pageNumber": 5,
+    "type": "IMAGE",
+    "label": "Ilustración de Plaquetas y Monocitos",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p5-1771175520808-2.webp",
+    "dimensions": {
+      "width": 2043.3600000000001,
+      "height": 1025.28
+    }
+  },
+  {
+    "id": "crop-p5-1771175520878-3",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Etiqueta Plaquetas",
+    "detectedText": "Platelets",
+    "imageUrl": "images/pro_v1_crop-p5-1771175520878-3.webp",
+    "dimensions": {
+      "width": 412.8,
+      "height": 92.15999999999995
+    }
+  },
+  {
+    "id": "crop-p5-1771175520883-4",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Etiqueta Monocitos",
+    "detectedText": "Monocytes",
+    "imageUrl": "images/pro_v1_crop-p5-1771175520883-4.webp",
+    "dimensions": {
+      "width": 495.35999999999996,
+      "height": 92.15999999999995
+    }
+  },
+  {
+    "id": "crop-p5-1771175520901-5",
+    "pageNumber": 5,
+    "type": "IMAGE",
+    "label": "Fondo del panel informativo",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p5-1771175520901-5.webp",
+    "dimensions": {
+      "width": 1589.28,
+      "height": 1543.68
+    }
+  },
+  {
+    "id": "crop-p5-1771175520975-6",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Descripción del Problema",
+    "detectedText": "• Problema: El 'Fracaso Regenerativo' por inflamación crónica no resuelta.",
+    "imageUrl": "images/pro_v1_crop-p5-1771175520975-6.webp",
+    "dimensions": {
+      "width": 1444.8,
+      "height": 195.84000000000003
+    }
+  },
+  {
+    "id": "crop-p5-1771175520991-7",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Descripción de la Solución",
+    "detectedText": "• Solución: Enriquecimiento selectivo en Células Mononucleares.",
+    "imageUrl": "images/pro_v1_crop-p5-1771175520991-7.webp",
+    "dimensions": {
+      "width": 1444.8,
+      "height": 195.84000000000003
+    }
+  },
+  {
+    "id": "crop-p5-1771175521008-8",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Descripción del Mecanismo",
+    "detectedText": "• Mecanismo: Los monocitos inducen la transición al fenotipo M2 y liberan IL-10 (Antiinflamatoria).",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521008-8.webp",
+    "dimensions": {
+      "width": 1444.8,
+      "height": 322.56000000000006
+    }
+  },
+  {
+    "id": "crop-p5-1771175521029-9",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Descripción de Diferenciación",
+    "detectedText": "• Diferenciación: Gel de densidad específica que captura la capa mononuclear.",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521029-9.webp",
+    "dimensions": {
+      "width": 1320.9600000000003,
+      "height": 288
+    }
+  },
+  {
+    "id": "crop-p5-1771175521042-10",
+    "pageNumber": 5,
+    "type": "IMAGE",
+    "label": "Icono de Monocito",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p5-1771175521042-10.webp",
+    "dimensions": {
+      "width": 412.79999999999995,
+      "height": 380.1600000000001
+    }
+  },
+  {
+    "id": "crop-p5-1771175521054-11",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Etiqueta Monocito",
+    "detectedText": "Monocito",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521054-11.webp",
+    "dimensions": {
+      "width": 288.96000000000004,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p5-1771175521067-12",
+    "pageNumber": 5,
+    "type": "IMAGE",
+    "label": "Icono de Macrófago M1",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p5-1771175521067-12.webp",
+    "dimensions": {
+      "width": 412.7999999999999,
+      "height": 380.1600000000001
+    }
+  },
+  {
+    "id": "crop-p5-1771175521087-13",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Etiqueta Macrófago M1",
+    "detectedText": "Macrófago M1 (Proinflamatorio)",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521087-13.webp",
+    "dimensions": {
+      "width": 454.0799999999999,
+      "height": 138.23999999999987
+    }
+  },
+  {
+    "id": "crop-p5-1771175521101-14",
+    "pageNumber": 5,
+    "type": "IMAGE",
+    "label": "Flecha de intervención del proceso",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p5-1771175521101-14.webp",
+    "dimensions": {
+      "width": 660.4799999999999,
+      "height": 334.08000000000004
+    }
+  },
+  {
+    "id": "crop-p5-1771175521121-15",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Texto Intervención",
+    "detectedText": "Intervención SBL.PRP.3+M",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521121-15.webp",
+    "dimensions": {
+      "width": 412.8000000000001,
+      "height": 126.71999999999986
+    }
+  },
+  {
+    "id": "crop-p5-1771175521135-16",
+    "pageNumber": 5,
+    "type": "IMAGE",
+    "label": "Icono de Macrófago M2",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p5-1771175521135-16.webp",
+    "dimensions": {
+      "width": 412.8000000000001,
+      "height": 380.1600000000001
+    }
+  },
+  {
+    "id": "crop-p5-1771175521154-17",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Etiqueta Macrófago M2",
+    "detectedText": "Macrófago M2 (Reparador)",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521154-17.webp",
+    "dimensions": {
+      "width": 412.8000000000001,
+      "height": 138.23999999999987
+    }
+  },
+  {
+    "id": "crop-p5-1771175521168-18",
+    "pageNumber": 5,
+    "type": "TEXT",
+    "label": "Logotipo NotebookLM",
+    "detectedText": "NotebookLM",
+    "imageUrl": "images/pro_v1_crop-p5-1771175521168-18.webp",
+    "dimensions": {
+      "width": 309.5999999999998,
+      "height": 46.08000000000004
+    }
+  },
+  {
+    "id": "crop-p6-1771175549529-0",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "EXOSOMAS Y META CELL TECHNOLOGY (MCT)",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549529-0.webp",
+    "dimensions": {
+      "width": 2980.4159999999997,
+      "height": 175.10399999999996
+    }
+  },
+  {
+    "id": "crop-p6-1771175549689-1",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Cita explicativa",
+    "detectedText": "“PRP es el combustible; los Exosomas son las instrucciones.”",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549689-1.webp",
+    "dimensions": {
+      "width": 3537.6960000000004,
+      "height": 126.72000000000006
+    }
+  },
+  {
+    "id": "crop-p6-1771175549707-2",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Párrafo de Meta Cell Technology",
+    "detectedText": "Meta Cell Technology (MCT): Potenciación fototérmica de la muestra autóloga.",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549707-2.webp",
+    "dimensions": {
+      "width": 1725.504,
+      "height": 308.736
+    }
+  },
+  {
+    "id": "crop-p6-1771175549742-3",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Punto de lista Estímulo",
+    "detectedText": "- Estímulo: Luz Azul + Temperatura controlada (42°C).",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549742-3.webp",
+    "dimensions": {
+      "width": 1461.312,
+      "height": 198.14399999999992
+    }
+  },
+  {
+    "id": "crop-p6-1771175549768-4",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Punto de lista Resultados",
+    "detectedText": "- Resultados: Incremento de ATP, mayor liberación de exosomas, perfil miRNA pro-angiogénico.",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549768-4.webp",
+    "dimensions": {
+      "width": 1680.0959999999998,
+      "height": 304.12800000000004
+    }
+  },
+  {
+    "id": "crop-p6-1771175549792-5",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Párrafo de Biología",
+    "detectedText": "Biología: Vesículas (30-150 nm) cargadas de lípidos, proteínas y ácidos nucleicos.",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549792-5.webp",
+    "dimensions": {
+      "width": 1828.704,
+      "height": 202.75200000000018
+    }
+  },
+  {
+    "id": "crop-p6-1771175549821-6",
+    "pageNumber": 6,
+    "type": "IMAGE",
+    "label": "Diagrama de proceso celular",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p6-1771175549821-6.webp",
+    "dimensions": {
+      "width": 1696.6079999999997,
+      "height": 1502.2080000000003
+    }
+  },
+  {
+    "id": "crop-p6-1771175549905-7",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Etiqueta de luz en diagrama",
+    "detectedText": "Luz Azul (42°C)",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549905-7.webp",
+    "dimensions": {
+      "width": 598.5599999999996,
+      "height": 103.67999999999996
+    }
+  },
+  {
+    "id": "crop-p6-1771175549913-8",
+    "pageNumber": 6,
+    "type": "TEXT",
+    "label": "Logotipo NotebookLM",
+    "detectedText": "NotebookLM",
+    "imageUrl": "images/pro_v1_crop-p6-1771175549913-8.webp",
+    "dimensions": {
+      "width": 297.2159999999998,
+      "height": 50.688000000000045
+    }
+  },
+  {
+    "id": "crop-p7-1771175562147-0",
+    "pageNumber": 7,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "EXO-TECH: EL PRIMER BIOIMPLANTE DE EXOSOMAS AUTÓLOGOS",
+    "imageUrl": "images/pro_v1_crop-p7-1771175562147-0.webp",
+    "dimensions": {
+      "width": 3591.3600000000006,
+      "height": 154.36799999999997
+    }
+  },
+  {
+    "id": "crop-p7-1771175562287-1",
+    "pageNumber": 7,
+    "type": "IMAGE",
+    "label": "Representación 3D del bioimplante",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p7-1771175562287-1.webp",
+    "dimensions": {
+      "width": 1704.8639999999998,
+      "height": 1423.872
+    }
+  },
+  {
+    "id": "crop-p7-1771175562383-2",
+    "pageNumber": 7,
+    "type": "TEXT",
+    "label": "Definición del producto",
+    "detectedText": "Definición: Matriz viscoelástica inyectable derivada del plasma y cargada de exosomas MCT.",
+    "imageUrl": "images/pro_v1_crop-p7-1771175562383-2.webp",
+    "dimensions": {
+      "width": 920.5440000000001,
+      "height": 456.192
+    }
+  },
+  {
+    "id": "crop-p7-1771175562402-3",
+    "pageNumber": 7,
+    "type": "TEXT",
+    "label": "Detalles del mecanismo de acción",
+    "detectedText": "Mecanismo de Doble Acción: 1. Soporte Mecánico: Retención in situ, evita el 'wash-out'. 2. Bioactividad Sostenida: Liberación prolongada de señalización.",
+    "imageUrl": "images/pro_v1_crop-p7-1771175562402-3.webp",
+    "dimensions": {
+      "width": 949.4399999999999,
+      "height": 972.288
+    }
+  },
+  {
+    "id": "crop-p7-1771175562430-4",
+    "pageNumber": 7,
+    "type": "TEXT",
+    "label": "Indicación de uso",
+    "detectedText": "Indicación: Voluminización + Regeneración Intensa (Atrofia, Defectos Estructurales).",
+    "imageUrl": "images/pro_v1_crop-p7-1771175562430-4.webp",
+    "dimensions": {
+      "width": 3182.688,
+      "height": 96.76799999999983
+    }
+  },
+  {
+    "id": "crop-p7-1771175562449-5",
+    "pageNumber": 7,
+    "type": "IMAGE",
+    "label": "Logo NotebookLM",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p7-1771175562449-5.webp",
+    "dimensions": {
+      "width": 280.7039999999998,
+      "height": 39.168000000000035
+    }
+  },
+  {
+    "id": "crop-p8-1771175576096-0",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "SEGURIDAD BIOLÓGICA Y MARCO REGULATORIO",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576096-0.webp",
+    "dimensions": {
+      "width": 3302.4,
+      "height": 184.31999999999996
+    }
+  },
+  {
+    "id": "crop-p8-1771175576234-2",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Cabecera Columna 2",
+    "detectedText": "EXOSOMAS HETERÓLOGOS",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576234-2.webp",
+    "dimensions": {
+      "width": 1242.5280000000002,
+      "height": 131.32799999999997
+    }
+  },
+  {
+    "id": "crop-p8-1771175576242-3",
+    "pageNumber": 8,
+    "type": "IMAGE",
+    "label": "Icono de Certificado CE",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p8-1771175576242-3.webp",
+    "dimensions": {
+      "width": 536.64,
+      "height": 741.888
+    }
+  },
+  {
+    "id": "crop-p8-1771175576264-5",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Origen Heterólogos",
+    "detectedText": "Origen: Células madre animales, plantas.",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576264-5.webp",
+    "dimensions": {
+      "width": 1271.4240000000002,
+      "height": 205.05599999999993
+    }
+  },
+  {
+    "id": "crop-p8-1771175576277-6",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Estatus Autólogos",
+    "detectedText": "Estatus: MEDICAL DEVICE (CE/MDR). Uso clínico autorizado.",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576277-6.webp",
+    "dimensions": {
+      "width": 1345.7279999999998,
+      "height": 202.75200000000018
+    }
+  },
+  {
+    "id": "crop-p8-1771175576294-7",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Estatus Heterólogos",
+    "detectedText": "Estatus: COSMÉTICO (Tópico). Inyección ‘off-label’ de riesgo.",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576294-7.webp",
+    "dimensions": {
+      "width": 1172.352,
+      "height": 202.75200000000018
+    }
+  },
+  {
+    "id": "crop-p8-1771175576310-8",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Seguridad Autólogos",
+    "detectedText": "Seguridad: Compatibilidad HLA total. Riesgo nulo de transmisión.",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576310-8.webp",
+    "dimensions": {
+      "width": 1259.0400000000002,
+      "height": 202.75199999999992
+    }
+  },
+  {
+    "id": "crop-p8-1771175576328-9",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Riesgos Heterólogos",
+    "detectedText": "Riesgos: Reacción inmunogénica, variabilidad biológica.",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576328-9.webp",
+    "dimensions": {
+      "width": 1275.5520000000001,
+      "height": 202.75199999999992
+    }
+  },
+  {
+    "id": "crop-p8-1771175576346-10",
+    "pageNumber": 8,
+    "type": "TEXT",
+    "label": "Logo NotebookLM",
+    "detectedText": "NotebookLM",
+    "imageUrl": "images/pro_v1_crop-p8-1771175576346-10.webp",
+    "dimensions": {
+      "width": 255.93599999999978,
+      "height": 39.168000000000035
+    }
+  },
+  {
+    "id": "crop-p9-1771175611333-0",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "ALGORITMO DE DECISIÓN CLÍNICA",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611333-0.webp",
+    "dimensions": {
+      "width": 2720.352,
+      "height": 200.44799999999998
+    }
+  },
+  {
+    "id": "crop-p9-1771175611516-1",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Subtítulo",
+    "detectedText": "SELECCIÓN TERAPÉUTICA BASADA EN EL MICROAMBIENTE",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611516-1.webp",
+    "dimensions": {
+      "width": 2613.024,
+      "height": 76.03200000000001
+    }
+  },
+  {
+    "id": "crop-p9-1771175611544-2",
+    "pageNumber": 9,
+    "type": "IMAGE",
+    "label": "Gráfico de interfaz de tabla",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p9-1771175611544-2.webp",
+    "dimensions": {
+      "width": 3752.352,
+      "height": 1638.144
+    }
+  },
+  {
+    "id": "crop-p9-1771175611734-3",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Cabecera Condición Clínica",
+    "detectedText": "CONDICIÓN CLÍNICA",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611734-3.webp",
+    "dimensions": {
+      "width": 701.7600000000001,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p9-1771175611741-4",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Cabecera Descripción",
+    "detectedText": "DESCRIPCIÓN",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611741-4.webp",
+    "dimensions": {
+      "width": 544.8960000000001,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p9-1771175611744-5",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Cabecera Producto Recomendado",
+    "detectedText": "PRODUCTO RECOMENDADO",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611744-5.webp",
+    "dimensions": {
+      "width": 540.768,
+      "height": 152.06400000000002
+    }
+  },
+  {
+    "id": "crop-p9-1771175611758-6",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Cabecera Racional Terapéutico",
+    "detectedText": "RACIONAL TERAPÉUTICO",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611758-6.webp",
+    "dimensions": {
+      "width": 916.4160000000004,
+      "height": 69.12000000000006
+    }
+  },
+  {
+    "id": "crop-p9-1771175611774-7",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Condición Lesión Aguda",
+    "detectedText": "LESIÓN AGUDA / ESTRUCTURAL",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611774-7.webp",
+    "dimensions": {
+      "width": 586.176,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611779-8",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Descripción Lesión Aguda",
+    "detectedText": "Rotura tendinosa, post-quirúrgico.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611779-8.webp",
+    "dimensions": {
+      "width": 664.6080000000002,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611793-9",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Botón SBL.PRP.3",
+    "detectedText": "SBL.PRP.3",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611793-9.webp",
+    "dimensions": {
+      "width": 710.0160000000002,
+      "height": 177.4079999999999
+    }
+  },
+  {
+    "id": "crop-p9-1771175611810-10",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Racional Lesión Aguda",
+    "detectedText": "Prioridad: Aporte masivo de GFs para reparación rápida.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611810-10.webp",
+    "dimensions": {
+      "width": 957.6959999999999,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611828-11",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Condición Inflamación Crónica",
+    "detectedText": "INFLAMACIÓN CRÓNICA / ARTROSIS",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611828-11.webp",
+    "dimensions": {
+      "width": 734.784,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611844-12",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Descripción Inflamación Crónica",
+    "detectedText": "Sinovitis, dolor crónico, fallo previo.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611844-12.webp",
+    "dimensions": {
+      "width": 726.5280000000001,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611859-13",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Botón SBL.PRP.3+M",
+    "detectedText": "SBL.PRP.3+M",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611859-13.webp",
+    "dimensions": {
+      "width": 710.0160000000002,
+      "height": 179.7119999999999
+    }
+  },
+  {
+    "id": "crop-p9-1771175611876-14",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Racional Inflamación Crónica",
+    "detectedText": "Prioridad: Inmunomodulación (Shift M1→M2).",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611876-14.webp",
+    "dimensions": {
+      "width": 957.6959999999999,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611893-15",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Condición Senescencia",
+    "detectedText": "SENESCENCIA / REFRACTARIO",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611893-15.webp",
+    "dimensions": {
+      "width": 561.408,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611909-16",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Descripción Senescencia",
+    "detectedText": "Envejecimiento, metabolismo lento.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611909-16.webp",
+    "dimensions": {
+      "width": 701.7600000000002,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611926-17",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Botón MCT EXOSOMAS",
+    "detectedText": "MCT EXOSOMAS",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611926-17.webp",
+    "dimensions": {
+      "width": 710.0160000000002,
+      "height": 188.9279999999999
+    }
+  },
+  {
+    "id": "crop-p9-1771175611943-18",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Racional Senescencia",
+    "detectedText": "Prioridad: Reactivación metabólica (ATP) y señalización.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611943-18.webp",
+    "dimensions": {
+      "width": 1019.616,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611960-19",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Condición Déficit de Volumen",
+    "detectedText": "DÉFICIT DE VOLUMEN",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611960-19.webp",
+    "dimensions": {
+      "width": 404.54400000000004,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175611974-20",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Descripción Déficit de Volumen",
+    "detectedText": "Atrofia tisular.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611974-20.webp",
+    "dimensions": {
+      "width": 458.2080000000002,
+      "height": 71.42400000000006
+    }
+  },
+  {
+    "id": "crop-p9-1771175611978-21",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Botón EXO-TECH",
+    "detectedText": "EXO-TECH",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611978-21.webp",
+    "dimensions": {
+      "width": 710.0160000000002,
+      "height": 188.9279999999999
+    }
+  },
+  {
+    "id": "crop-p9-1771175611997-22",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Racional Déficit de Volumen",
+    "detectedText": "Prioridad: Scaffold mecánico + bioactividad.",
+    "imageUrl": "images/pro_v1_crop-p9-1771175611997-22.webp",
+    "dimensions": {
+      "width": 982.4639999999999,
+      "height": 152.06399999999988
+    }
+  },
+  {
+    "id": "crop-p9-1771175612010-23",
+    "pageNumber": 9,
+    "type": "TEXT",
+    "label": "Logo NotebookLM",
+    "detectedText": "NotebookLM",
+    "imageUrl": "images/pro_v1_crop-p9-1771175612010-23.webp",
+    "dimensions": {
+      "width": 272.4479999999998,
+      "height": 50.688000000000045
+    }
+  },
+  {
+    "id": "crop-p10-1771175639116-0",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "SINERGIA TERAPÉUTICA: PROTOCOLOS COMBINADOS",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639116-0.webp",
+    "dimensions": {
+      "width": 3574.8480000000004,
+      "height": 163.58399999999997
+    }
+  },
+  {
+    "id": "crop-p10-1771175639277-1",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Cita de protocolo",
+    "detectedText": "“No elija una herramienta, diseñe un protocolo integral.”",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639277-1.webp",
+    "dimensions": {
+      "width": 3290.016,
+      "height": 152.06400000000008
+    }
+  },
+  {
+    "id": "crop-p10-1771175639310-2",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Título Fase 1",
+    "detectedText": "FASE 1: MODULACIÓN (Día 0)",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639310-2.webp",
+    "dimensions": {
+      "width": 1098.048,
+      "height": 89.85600000000008
+    }
+  },
+  {
+    "id": "crop-p10-1771175639337-3",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Contenido Fase 1",
+    "detectedText": "Uso de SBL.PRP.3+M. Objetivo: Limpiar el ambiente tóxico/inflamatorio.",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639337-3.webp",
+    "dimensions": {
+      "width": 1114.5600000000002,
+      "height": 283.392
+    }
+  },
+  {
+    "id": "crop-p10-1771175639376-4",
+    "pageNumber": 10,
+    "type": "IMAGE",
+    "label": "Icono de transición",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p10-1771175639376-4.webp",
+    "dimensions": {
+      "width": 309.6,
+      "height": 264.96
+    }
+  },
+  {
+    "id": "crop-p10-1771175639404-5",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Título Fase 2",
+    "detectedText": "FASE 2: REGENERACIÓN (Día 21+)",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639404-5.webp",
+    "dimensions": {
+      "width": 1279.6799999999998,
+      "height": 87.55200000000008
+    }
+  },
+  {
+    "id": "crop-p10-1771175639437-6",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Contenido Fase 2",
+    "detectedText": "Uso de SBL.PRP.3 o Exosomas. Objetivo: Estimular reparación sobre tejido receptivo.",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639437-6.webp",
+    "dimensions": {
+      "width": 1139.3279999999997,
+      "height": 283.392
+    }
+  },
+  {
+    "id": "crop-p10-1771175639475-7",
+    "pageNumber": 10,
+    "type": "TEXT",
+    "label": "Nota de potenciación transversal",
+    "detectedText": "Potenciación Transversal: Tecnología MCT (Luz/Calor) aplicable a ambos pasos para carga energética (ATP).",
+    "imageUrl": "images/pro_v1_crop-p10-1771175639475-7.webp",
+    "dimensions": {
+      "width": 2163.072,
+      "height": 198.14400000000018
+    }
+  },
+  {
+    "id": "crop-p10-1771175639514-8",
+    "pageNumber": 10,
+    "type": "IMAGE",
+    "label": "Logo NotebookLM",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p10-1771175639514-8.webp",
+    "dimensions": {
+      "width": 305.4719999999998,
+      "height": 43.77600000000004
+    }
+  },
+  {
+    "id": "crop-p11-1771175659513-0",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "IMPLEMENTACIÓN CLÍNICA Y FLUJO DE TRABAJO",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659513-0.webp",
+    "dimensions": {
+      "width": 3261.1200000000003,
+      "height": 172.79999999999995
+    }
+  },
+  {
+    "id": "crop-p11-1771175659705-1",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Icono de tubo de ensayo",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659705-1.webp",
+    "dimensions": {
+      "width": 817.344,
+      "height": 737.2799999999999
+    }
+  },
+  {
+    "id": "crop-p11-1771175659744-2",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Etiqueta Recolección",
+    "detectedText": "RECOLECCIÓN (15ml)",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659744-2.webp",
+    "dimensions": {
+      "width": 800.832,
+      "height": 170.49600000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175659760-3",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Descripción Recolección",
+    "detectedText": "Sistema de vacutainer estéril.",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659760-3.webp",
+    "dimensions": {
+      "width": 598.5600000000001,
+      "height": 165.88800000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175659774-4",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Flecha de flujo 1",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659774-4.webp",
+    "dimensions": {
+      "width": 218.78399999999996,
+      "height": 52.99199999999992
+    }
+  },
+  {
+    "id": "crop-p11-1771175659787-5",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Icono de centrífuga",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659787-5.webp",
+    "dimensions": {
+      "width": 817.344,
+      "height": 737.2799999999999
+    }
+  },
+  {
+    "id": "crop-p11-1771175659828-6",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Etiqueta Procesamiento",
+    "detectedText": "PROCESAMIENTO",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659828-6.webp",
+    "dimensions": {
+      "width": 809.0880000000001,
+      "height": 170.49600000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175659842-7",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Descripción Procesamiento",
+    "detectedText": "Sistema Cerrado. 8 min @ 4000 rpm.",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659842-7.webp",
+    "dimensions": {
+      "width": 643.9680000000001,
+      "height": 165.88800000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175659857-8",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Flecha de flujo 2",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659857-8.webp",
+    "dimensions": {
+      "width": 218.7840000000002,
+      "height": 52.99199999999992
+    }
+  },
+  {
+    "id": "crop-p11-1771175659871-9",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Icono de jeringa",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659871-9.webp",
+    "dimensions": {
+      "width": 817.3439999999998,
+      "height": 737.2799999999999
+    }
+  },
+  {
+    "id": "crop-p11-1771175659909-10",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Etiqueta Aplicación",
+    "detectedText": "APLICACIÓN",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659909-10.webp",
+    "dimensions": {
+      "width": 800.8319999999998,
+      "height": 170.49600000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175659925-11",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Descripción Aplicación",
+    "detectedText": "Intraarticular, Intratendinosa o Intradérmica.",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659925-11.webp",
+    "dimensions": {
+      "width": 619.1999999999996,
+      "height": 246.52800000000022
+    }
+  },
+  {
+    "id": "crop-p11-1771175659941-12",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Flecha de flujo 3",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659941-12.webp",
+    "dimensions": {
+      "width": 218.7840000000002,
+      "height": 52.99199999999992
+    }
+  },
+  {
+    "id": "crop-p11-1771175659954-13",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Icono de monitor de seguimiento",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175659954-13.webp",
+    "dimensions": {
+      "width": 813.2159999999998,
+      "height": 737.2799999999999
+    }
+  },
+  {
+    "id": "crop-p11-1771175659990-14",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Etiqueta Seguimiento",
+    "detectedText": "SEGUIMIENTO",
+    "imageUrl": "images/pro_v1_crop-p11-1771175659990-14.webp",
+    "dimensions": {
+      "width": 800.8319999999998,
+      "height": 170.49600000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175660008-15",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Descripción Seguimiento",
+    "detectedText": "Evaluación clínica post-procedimiento.",
+    "imageUrl": "images/pro_v1_crop-p11-1771175660008-15.webp",
+    "dimensions": {
+      "width": 685.2480000000002,
+      "height": 165.88800000000015
+    }
+  },
+  {
+    "id": "crop-p11-1771175660024-16",
+    "pageNumber": 11,
+    "type": "TEXT",
+    "label": "Nota de gestión de expectativas",
+    "detectedText": "Gestión de Expectativas: Respuesta antiinflamatoria rápida (días) vs. Remodelación estructural lenta (meses).",
+    "imageUrl": "images/pro_v1_crop-p11-1771175660024-16.webp",
+    "dimensions": {
+      "width": 3723.4559999999997,
+      "height": 76.03200000000007
+    }
+  },
+  {
+    "id": "crop-p11-1771175660046-17",
+    "pageNumber": 11,
+    "type": "IMAGE",
+    "label": "Logo NotebookLM",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p11-1771175660046-17.webp",
+    "dimensions": {
+      "width": 301.3439999999998,
+      "height": 46.08000000000004
+    }
+  },
+  {
+    "id": "crop-p12-1771175677627-0",
+    "pageNumber": 12,
+    "type": "TEXT",
+    "label": "Título principal",
+    "detectedText": "INTEGRANDO LA PRECISIÓN EN LA PRÁCTICA DIARIA",
+    "imageUrl": "images/pro_v1_crop-p12-1771175677627-0.webp",
+    "dimensions": {
+      "width": 3496.416,
+      "height": 168.192
+    }
+  },
+  {
+    "id": "crop-p12-1771175677818-1",
+    "pageNumber": 12,
+    "type": "IMAGE",
+    "label": "Logotipo icono",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p12-1771175677818-1.webp",
+    "dimensions": {
+      "width": 198.14399999999995,
+      "height": 449.28000000000003
+    }
+  },
+  {
+    "id": "crop-p12-1771175677841-2",
+    "pageNumber": 12,
+    "type": "TEXT",
+    "label": "Logotipo texto",
+    "detectedText": "SOLUTIONS BIOMEDICAL LAB",
+    "imageUrl": "images/pro_v1_crop-p12-1771175677841-2.webp",
+    "dimensions": {
+      "width": 858.624,
+      "height": 274.176
+    }
+  },
+  {
+    "id": "crop-p12-1771175677862-3",
+    "pageNumber": 12,
+    "type": "TEXT",
+    "label": "Punto informativo 1",
+    "detectedText": "1. La medicina regenerativa es el nuevo estándar biológico.",
+    "imageUrl": "images/pro_v1_crop-p12-1771175677862-3.webp",
+    "dimensions": {
+      "width": 2835.9359999999997,
+      "height": 119.8080000000001
+    }
+  },
+  {
+    "id": "crop-p12-1771175677901-4",
+    "pageNumber": 12,
+    "type": "TEXT",
+    "label": "Punto informativo 2",
+    "detectedText": "2. La clave es la precisión: Concentración, Monocitos o Señalización según la patología.",
+    "imageUrl": "images/pro_v1_crop-p12-1771175677901-4.webp",
+    "dimensions": {
+      "width": 2703.84,
+      "height": 244.22399999999996
+    }
+  },
+  {
+    "id": "crop-p12-1771175677943-5",
+    "pageNumber": 12,
+    "type": "TEXT",
+    "label": "Punto informativo 3",
+    "detectedText": "3. Solutions Biomedical Lab: Plataforma integral certificada (CE/MDR).",
+    "imageUrl": "images/pro_v1_crop-p12-1771175677943-5.webp",
+    "dimensions": {
+      "width": 2352.96,
+      "height": 244.22399999999996
+    }
+  },
+  {
+    "id": "crop-p12-1771175677988-6",
+    "pageNumber": 12,
+    "type": "TEXT",
+    "label": "Pie de página",
+    "detectedText": "CONTACTO PARA FORMACIÓN CIENTÍFICA: MEDICAL EDUCATION DEPT.",
+    "imageUrl": "images/pro_v1_crop-p12-1771175677988-6.webp",
+    "dimensions": {
+      "width": 1692.4799999999998,
+      "height": 71.42400000000006
+    }
+  },
+  {
+    "id": "crop-p12-1771175678010-7",
+    "pageNumber": 12,
+    "type": "IMAGE",
+    "label": "Imagen decorativa superior izquierda",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p12-1771175678010-7.webp",
+    "dimensions": {
+      "width": 582.0479999999999,
+      "height": 516.096
+    }
+  },
+  {
+    "id": "crop-p12-1771175678048-8",
+    "pageNumber": 12,
+    "type": "IMAGE",
+    "label": "Imagen decorativa inferior izquierda",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p12-1771175678048-8.webp",
+    "dimensions": {
+      "width": 681.12,
+      "height": 817.92
+    }
+  },
+  {
+    "id": "crop-p12-1771175678090-9",
+    "pageNumber": 12,
+    "type": "IMAGE",
+    "label": "Imagen decorativa derecha",
+    "detectedText": null,
+    "imageUrl": "images/pro_v1_crop-p12-1771175678090-9.webp",
+    "dimensions": {
+      "width": 503.616,
+      "height": 887.04
+    }
+  }
+]

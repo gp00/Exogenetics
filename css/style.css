@@ -4458,6 +4458,16 @@ td strong {
 }
 
 .profesionales-page .pro-security .section-title,
+.profesionales-page .pro-algorithm .section-title,
+.profesionales-page .pro-synergy .section-title {
+  white-space: nowrap !important;
+  display: block;
+  font-size: clamp(1.8rem, 4.2vw, 3.5rem);
+  letter-spacing: 2px;
+  width: 100%;
+  margin-bottom: 2rem !important;
+}
+
 .profesionales-page .pro-triada .section-title {
   font-size: clamp(2rem, 5vw, 4.5rem);
   margin-bottom: 0.2rem;
@@ -4466,11 +4476,6 @@ td strong {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
-}
-
-.profesionales-page .pro-security .section-title {
-  white-space: nowrap !important;
-  display: block;
 }
 
 .profesionales-page .pro-triada .section-subtitle {
@@ -4924,20 +4929,258 @@ td strong {
 }
 
 /* ---------------------------------------------------------
-   VACIADO TEMPORAL PARA REDISEÑO (SECCIONES RESTANTES)
+   10. Synergy: Combined Protocols (Ref. 10.jpg)
    --------------------------------------------------------- */
-.profesionales-page .pro-technical,
-.profesionales-page .pro-inmuno,
-.profesionales-page .pro-mct,
-.profesionales-page .pro-exo-tech,
-.profesionales-page .pro-synergy,
-.profesionales-page .pro-workflow,
-.profesionales-page .pro-conclusion {
-  background-color: transparent;
-  min-height: auto;
+.pro-synergy {
+  background-color: #000;
+  overflow: hidden;
 }
 
-/* Nota: Las secciones 1, 2, 3, 8 y 9 estan operativas. */
+.synergy-quote-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.synergy-quote {
+  font-family: var(--font-main);
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.synergy-quote .accent-purple {
+  color: #a020f0;
+  text-shadow: 0 0 20px rgba(160, 32, 240, 0.6);
+}
+
+.synergy-frame {
+  padding: 4rem 3rem !important;
+  background: rgba(5, 5, 5, 0.4) !important;
+}
+
+.synergy-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.synergy-box {
+  flex: 1;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2.2rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efecto de haz de luz diagonal (fondo atractivo) */
+.synergy-box::before {
+  content: '';
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  width: 200%;
+  height: 400%;
+  background: linear-gradient(45deg,
+      transparent 45%,
+      rgba(255, 255, 255, 0.04) 48%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.04) 52%,
+      transparent 55%);
+  transform: rotate(-15deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Acentuación Tech: Línea de resplandor superior */
+.synergy-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  border-radius: 0 0 10px 10px;
+  z-index: 3;
+}
+
+.synergy-box:hover {
+  transform: translateY(-8px);
+}
+
+.fase-1 {
+  border: 1px solid rgba(0, 242, 254, 0.35);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 30px rgba(0, 242, 254, 0.08),
+    0 0 15px rgba(0, 242, 254, 0.15);
+}
+
+.fase-1::after {
+  background: linear-gradient(90deg, transparent, #00f2fe, transparent);
+  box-shadow: 0 0 12px #00f2fe;
+}
+
+.fase-2 {
+  border: 1px solid rgba(191, 0, 255, 0.35);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 30px rgba(191, 0, 255, 0.08),
+    0 0 15px rgba(191, 0, 255, 0.15);
+}
+
+.fase-2::after {
+  background: linear-gradient(90deg, transparent, #bf00ff, transparent);
+  box-shadow: 0 0 12px #bf00ff;
+}
+
+.box-header h3 {
+  font-family: var(--font-main);
+  font-size: clamp(1.4rem, 2.1vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+}
+
+.fase-1 .box-header h3,
+.fase-2 .box-header h3 {
+  color: #00FFFF;
+}
+
+.phase-highlight {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+/* Conservamos sub-label por si se usa en otras partes, pero aqui usamos phase-highlight */
+.sub-label {
+  font-weight: 300;
+  font-size: 0.85em;
+  color: #fff;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.box-content p {
+  font-family: var(--font-main);
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  color: #E0E0E0;
+  position: relative;
+  z-index: 2;
+}
+
+.box-content strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Conector */
+.synergy-connector {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 120px;
+  justify-content: center;
+}
+
+.connector-line {
+  height: 2px;
+  flex: 1;
+  background: linear-gradient(90deg, rgba(0, 255, 255, 0.5), rgba(160, 32, 240, 0.5));
+}
+
+.connector-arrow {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+
+.connector-arrow span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #00FFFF;
+  border-right: 5px solid #A020F0;
+  transform: rotate(45deg);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
+}
+
+.synergy-footer {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  position: relative;
+}
+
+.glow-dots-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.glow-dots-line .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #A020F0;
+  box-shadow: 0 0 15px #A020F0;
+}
+
+.glow-dots-line .line {
+  width: min(300px, 40vw);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #A020F0, transparent);
+}
+
+.footer-note {
+  font-family: var(--font-main);
+  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-note strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .synergy-timeline {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .synergy-connector {
+    transform: rotate(90deg);
+    margin: 20px 0;
+  }
+
+  .synergy-box {
+    width: 100%;
+  }
+}
+
+/* Nota: Las secciones 1, 2, 3, 8, 9 y 10 estan COMPLETADAS y VALIDADAS. */
 
 
 @media (max-width: 992px) {
@@ -4971,14 +5214,13 @@ td strong {
 .profesionales-page .pro-mct,
 .profesionales-page .pro-exo-tech,
 .profesionales-page .pro-algorithm,
-.profesionales-page .pro-synergy,
 .profesionales-page .pro-workflow,
 .profesionales-page .pro-conclusion {
   background-color: transparent;
   min-height: auto;
 }
 
-/* Nota: Las secciones 1, 2, 3 y 8 estan operativas. */
+/* Nota: Las secciones 1, 2, 3, 8, 9 y 10 estan COMPLETADAS y VALIDADAS. */
 
 
 /* Nota: Las secciones 1, 2 y 3 (Hero, Manifiesto, Tríada) 
