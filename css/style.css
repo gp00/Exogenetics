@@ -4457,6 +4457,7 @@ td strong {
   z-index: 2;
 }
 
+.profesionales-page .pro-security .section-title,
 .profesionales-page .pro-triada .section-title {
   font-size: clamp(2rem, 5vw, 4.5rem);
   margin-bottom: 0.2rem;
@@ -4465,6 +4466,11 @@ td strong {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
+}
+
+.profesionales-page .pro-security .section-title {
+  white-space: nowrap !important;
+  display: block;
 }
 
 .profesionales-page .pro-triada .section-subtitle {
@@ -4586,49 +4592,394 @@ td strong {
   font-size: 1.1rem;
 }
 
-/* 4. Technical */
-.profesionales-page .tech-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 5rem;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.profesionales-page .pro-technical {
-  position: relative;
-  overflow: hidden;
+/* ---------------------------------------------------------
+   VACIADO TEMPORAL PARA REDISEÑO (SECCIONES 4 - 12)
+   --------------------------------------------------------- */
+/* ---------------------------------------------------------
+   8. Security & Regulatory Frame (Ref. 8.jpg)
+   --------------------------------------------------------- */
+.pro-security {
   background-color: #000;
+  overflow: hidden;
 }
 
-.profesionales-page .pro-technical::before {
+.tech-frame-container {
+  position: relative;
+  border: 1px solid rgba(24, 99, 220, 0.3);
+  padding: 40px 30px;
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  margin-top: 3rem;
+}
+
+.tech-frame-container::before,
+.tech-frame-container::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.tech-frame-container::before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid var(--color-accent-blue);
+  border-left: 2px solid var(--color-accent-blue);
+  box-shadow: -5px -5px 15px rgba(24, 99, 220, 0.5);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 20% 20%, 20% 100%, 0 100%);
+}
+
+.tech-frame-container::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid var(--color-accent-magenta);
+  border-right: 2px solid var(--color-accent-magenta);
+  box-shadow: 5px 5px 15px rgba(234, 43, 161, 0.5);
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 0 100%, 0 80%, 80% 80%);
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.ce-cert-icon {
+  width: 160px;
+  height: 220px;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  border-radius: 8px 30px 8px 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2), inset 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.ce-cert-icon::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../images/pro_v1_crop-p4-1771175478594-0.webp') center center / cover no-repeat;
-  opacity: 0.4;
-  z-index: 1;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, transparent 50%, rgba(0, 255, 255, 0.2) 50%);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.4);
+  border-left: 1px solid rgba(0, 255, 255, 0.4);
 }
 
-.profesionales-page .tube-display {
-  position: relative;
-  padding: 2rem;
+.ce-text {
+  font-family: var(--font-main);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  margin-bottom: 15px;
 }
 
-.profesionales-page .tube-display img {
-  width: 100% !important;
-  max-width: 450px !important;
-  margin: 0 auto;
+.cert-lines {
+  width: 70%;
 }
 
-/* 12. Conclusion */
-.profesionales-page .footer-pro-logo {
-  height: 80px !important;
-  width: auto !important;
-  margin: 0 auto 3rem;
+.cert-lines span {
   display: block;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
 }
+
+.cert-seal {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background: radial-gradient(circle, var(--color-accent-magenta) 20%, transparent 70%);
+  border: 2px dashed var(--color-accent-magenta);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.security-table {
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.col-title {
+  padding: 25px 20px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.1vw, 1.7rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.col-title.magenta {
+  color: var(--color-accent-magenta);
+}
+
+.col-title.cyan {
+  color: #00FFFF;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.row-content {
+  padding: 30px 25px;
+}
+
+.row-content p {
+  margin-bottom: 0;
+  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+  color: var(--color-text-main);
+  font-weight: 300;
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+.row-content strong {
+  color: #fff;
+  font-weight: 700;
+  display: inline;
+  margin-right: 12px;
+  text-transform: none;
+}
+
+.grad-text-vivid {
+  background: var(--grad-vivid-cyan-purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-icon-panel {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .col-title {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* ---------------------------------------------------------
+   9. Algorithm Table (Ref. 9.jpg)
+   --------------------------------------------------------- */
+.algorithm-frame {
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+.profesionales-page .pro-algorithm .section-title {
+  white-space: nowrap !important;
+  display: block;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.pro-algorithm .section-subtitle {
+  color: #fff;
+  font-family: var(--font-sec);
+  /* Questrial */
+  letter-spacing: 4px;
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 1;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.algorithm-table-wrapper {
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+.algorithm-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.algorithm-table th,
+.algorithm-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.algorithm-table th {
+  font-family: var(--font-main);
+  color: var(--color-accent-magenta);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.algorithm-table td {
+  color: var(--color-text-main);
+  font-size: clamp(0.9rem, 1.3vw, 1.2rem);
+  vertical-align: middle;
+  font-family: var(--font-main);
+}
+
+.algorithm-table th:nth-child(3),
+.algorithm-table td:nth-child(3) {
+  text-align: center;
+}
+
+.algorithm-table td strong {
+  display: block;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* Badges with Neon Glow */
+.badge {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+  width: 100%;
+  max-width: 220px;
+  letter-spacing: 1px;
+}
+
+.badge-cyan {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00FFFF;
+  color: #00FFFF;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+.badge-purple {
+  background: rgba(160, 32, 240, 0.1);
+  border: 1px solid #A020F0;
+  color: #A020F0;
+  box-shadow: 0 0 25px rgba(160, 32, 240, 0.5);
+}
+
+.badge-magenta {
+  background: rgba(234, 43, 161, 0.1);
+  border: 1px solid var(--color-accent-magenta);
+  color: var(--color-accent-magenta);
+  box-shadow: 0 0 25px rgba(234, 43, 161, 0.5);
+}
+
+.badge-white {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+
+  .algorithm-table th,
+  .algorithm-table td {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------------------------------------------------------
+   VACIADO TEMPORAL PARA REDISEÑO (SECCIONES RESTANTES)
+   --------------------------------------------------------- */
+.profesionales-page .pro-technical,
+.profesionales-page .pro-inmuno,
+.profesionales-page .pro-mct,
+.profesionales-page .pro-exo-tech,
+.profesionales-page .pro-synergy,
+.profesionales-page .pro-workflow,
+.profesionales-page .pro-conclusion {
+  background-color: transparent;
+  min-height: auto;
+}
+
+/* Nota: Las secciones 1, 2, 3, 8 y 9 estan operativas. */
+
+
+@media (max-width: 992px) {
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-icon-panel {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .col-title {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* ---------------------------------------------------------
+   VACIADO TEMPORAL PARA REDISEÑO (SECCIONES RESTANTES)
+   --------------------------------------------------------- */
+.profesionales-page .pro-technical,
+.profesionales-page .pro-inmuno,
+.profesionales-page .pro-mct,
+.profesionales-page .pro-exo-tech,
+.profesionales-page .pro-algorithm,
+.profesionales-page .pro-synergy,
+.profesionales-page .pro-workflow,
+.profesionales-page .pro-conclusion {
+  background-color: transparent;
+  min-height: auto;
+}
+
+/* Nota: Las secciones 1, 2, 3 y 8 estan operativas. */
+
+
+/* Nota: Las secciones 1, 2 y 3 (Hero, Manifiesto, Tríada) 
+   se mantienen intactas por validación del usuario. */
