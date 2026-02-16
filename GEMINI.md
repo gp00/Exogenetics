@@ -179,6 +179,8 @@ Se ha implementado un sistema de envío de formularios sin necesidad de backend 
 ### 8.3. Otras Optimizaciones
 - **Auditoría de Assets:** Mantener la carpeta `images/` libre de archivos huérfanos utilizando el protocolo de limpieza en `images/borrame/`.
 - **Refactorización Hero:** Pendiente migrar el Hero de `pacientes.html` al sistema de Grid fluido (Fase 2 de Refactorización).
+- **Refactorización Profesionales (Completado ✅):** Se ha integrado el capítulo técnico SBL.PRP.3 (Introducción, Ingeniería y Rendimiento) en `Profesionales.html`, unificando el diseño y optimizando la responsividad.
+- **Auditoría Técnica:** Los hallazgos se encuentran en `AUDITORIA_PROFESIONALES.md`.
 
 ---
 
@@ -301,3 +303,8 @@ Verificar que NO existan:
   width: min(100%, 375px);
 }
 ```
+
+### 9.8. ESTÁNDARES ESPECÍFICOS DEL PROYECTO
+- **Ancho Estándar (Contenedores Geométricos):** `max-width: 1400px`.
+- **Ancho Técnico Estrecho (Focal Point):** `max-width: 1200px` (Usado en secciones con alta densidad de información técnica como SBL en `Profesionales.html`).
+- **Padding Vertical de Sección:** `6rem` (Unificado para mantener el ritmo visual).
