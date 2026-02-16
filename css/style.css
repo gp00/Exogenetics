@@ -26,13 +26,22 @@
   --font-body: 'Inter', sans-serif;
 
   /* Spacing */
-  --section-padding: clamp(60px, 10vw, 130px);
+  --section-padding: 3.5rem;
+  /* Ajustado para mayor proximidad entre secciones */
   --header-height: clamp(80px, 10vh, 100px);
 
   /* Font Sizes */
   --h1-size: clamp(2.5rem, 8vw, 5rem);
   --h2-size: clamp(2.5rem, 6vw, 4.5rem);
   --h3-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.grad-text-premium {
+  background: var(--grad-premium);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 * {
@@ -92,10 +101,16 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.section-padding {
+  padding: 0;
+  /* Eliminado para continuidad total */
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
+  /* Ensanchado para aprovechar el espacio lateral */
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 40px;
 }
 
 /* Decoraci�n Estilo Gema para Im�genes */
@@ -4457,16 +4472,16 @@ td strong {
   z-index: 2;
 }
 
-.profesionales-page .pro-security .section-title,
 .profesionales-page .pro-algorithm .section-title,
-.profesionales-page .pro-workflow .section-title,
-.profesionales-page .pro-synergy .section-title {
-  white-space: nowrap !important;
+.profesionales-page .pro-sbl-engineering .section-title,
+.profesionales-page .pro-sbl-performance .section-title {
+  white-space: nowrap;
+  /* Eliminado !important para permitir la personalización por sección */
   display: block;
-  font-size: clamp(1.8rem, 4.2vw, 3.5rem);
-  letter-spacing: 2px;
+  font-size: clamp(1.4rem, 3vw, 2.3rem);
+  letter-spacing: 0.5px;
   width: 100%;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .profesionales-page .pro-triada .section-title {
@@ -4478,6 +4493,20 @@ td strong {
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
 }
+
+.profesionales-page .pro-synergy .section-title {
+  font-size: clamp(1.8rem, 4vw, 3.8rem);
+  white-space: nowrap;
+  display: block;
+  text-align: center;
+  margin-bottom: 0.2rem !important;
+  /* Reduced further for tighter spacing */
+}
+
+.profesionales-page .synergy-quote-container {
+  margin-top: 0 !important;
+}
+
 
 .profesionales-page .pro-triada .section-subtitle {
   font-family: var(--font-main);
@@ -5323,40 +5352,47 @@ td strong {
 
 .step-title {
   font-family: var(--font-main);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, rgba(30, 30, 30, 0.9) 0%, rgba(10, 10, 10, 0.95) 100%);
-  padding: 8px 22px;
-  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%), rgba(20, 20, 20, 0.9);
+  padding: 10px 28px;
+  border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   display: inline-block;
   white-space: nowrap;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.workflow-step:hover .step-title {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(160, 32, 240, 0.1) 100%), rgba(30, 30, 30, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 255, 255, 0.1);
 }
 
 .step-meta {
-  font-size: 0.8em;
+  font-size: 0.85em;
   color: #00FFFF;
-  /* Highlight meta info like (15ml) inside the pill */
-  font-weight: 400;
+  font-weight: 500;
   text-transform: none;
-  margin-left: 4px;
+  margin-left: 6px;
 }
 
 .step-desc {
   font-family: var(--font-main);
-  font-size: 1.15rem;
-  /* Increased from 0.95rem */
+  font-size: 1.4rem;
+  /* Aumentado sustancialmente para legibilidad profesional */
   color: #e0e0e0;
-  line-height: 1.4;
-  margin-top: 0.8rem;
+  line-height: 1.5;
+  margin-top: 1rem;
   font-weight: 400;
-  max-width: 200px;
-  /* Prevent too wide text */
+  max-width: 240px;
+  /* Ajustado para el nuevo tamaño */
   margin-left: auto;
   margin-right: auto;
 }
@@ -5493,6 +5529,691 @@ td strong {
   background-color: transparent;
   min-height: auto;
 }
+
+/* ---------------------------------------------------------
+   SBL.PRP.3 Technical Content (Ref. 1.jpg / I_1.json)
+   --------------------------------------------------------- */
+/* [REGLAS DUPLICADAS ELIMINADAS] */
+
+.pro-sbl-intro {
+  padding: 6rem 2rem 6rem 2rem;
+  /* Restaurado padding estándar para aire */
+  background: radial-gradient(circle at 10% 10%, rgba(234, 43, 161, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(24, 99, 220, 0.05) 0%, transparent 40%);
+  background-color: #000;
+  /* Fallback explícito */
+  position: relative;
+}
+
+.pro-sbl-intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.sbl-hero-header .section-title {
+  text-align: left !important;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  white-space: normal;
+  line-height: 1.1;
+  margin-bottom: 0.5rem !important;
+  display: block;
+}
+
+
+.sbl-hero-header {
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 5;
+  max-width: 1200px;
+  /* Restricción de ancho para mayor enfoque visual */
+  margin-left: auto;
+  /* Centrado */
+  margin-right: auto;
+  /* Centrado */
+  width: 100%;
+}
+
+.sbl-hero-header .hero-subtitle-tech {
+  font-family: var(--font-sec);
+  font-size: clamp(0.9rem, 1.1vw, 1.25rem);
+  color: #FFFFFF !important;
+  max-width: 100%;
+  margin: 0;
+  opacity: 1;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 400;
+  /* Regular weight */
+}
+
+.sbl-intro-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 3rem;
+  align-items: center;
+  /* Centrado vertical respecto al contenido de la izquierda */
+  max-width: 1200px;
+  /* Estrechado para simetría con el resto del capítulo SBL */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sbl-image-main {
+  position: relative;
+  text-align: right;
+  z-index: 2;
+  /* Eliminado padding-top para permitir centrado perfecto */
+}
+
+.sbl-image-main img {
+  width: 85%;
+  /* Ligeramente más pequeña como solicitó el usuario */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  /* Mantener alineación a la derecha */
+  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.9));
+  border-radius: 0;
+  border: none;
+}
+
+.sbl-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sbl-info-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+/* Responsive SBL Intro */
+@media (max-width: 1024px) {
+  .sbl-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .sbl-image-main {
+    text-align: center;
+    order: -1;
+    /* Imagen primero en móvil */
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .sbl-image-main img {
+    max-width: 600px;
+    /* Restricción para que no sea gigante en móvil */
+    margin: 0 auto;
+    /* Centrado */
+  }
+
+  .sbl-info-container {
+    align-items: center;
+    /* Centrar items */
+  }
+
+  .sbl-info-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .sbl-info-item .step-desc {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.card-icon {
+  width: 140px;
+  /* Tamaño aumentado significativamente */
+  height: 140px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  position: relative;
+  border: none;
+}
+
+.svg-icon-sbl {
+  width: 100px;
+  /* Icono interno mucho más grande */
+  height: 100px;
+  stroke: #1863DC;
+  /* Azul corporativo limpio */
+  transition: all 0.3s ease;
+  filter: none !important;
+}
+
+.sbl-info-item:hover .svg-icon-sbl {
+  stroke: #EA2BA1;
+  /* Cambio a Magenta al hover para feedback profesional */
+  transform: scale(1.1);
+}
+
+.profesionales-page .sbl-info-item .step-title {
+  background: none !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: var(--font-main) !important;
+  font-size: clamp(1.4rem, 2vw, 1.8rem) !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.8rem !important;
+  color: #00FFFF !important;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.3) !important;
+  letter-spacing: 1px !important;
+  border-radius: 0 !important;
+  display: block !important;
+  text-transform: uppercase !important;
+  width: fit-content !important;
+}
+
+.sbl-info-item .step-desc {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 95%;
+  font-size: 1.25rem;
+  /* Legibilidad mejorada */
+  line-height: 1.5;
+  color: #ececec;
+  font-weight: 300;
+}
+
+.sbl-info-item .step-desc strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Engineering Section Refinements */
+.pro-sbl-engineering {
+  background-color: #000000;
+  margin-top: -1px;
+  padding: 6rem 2rem 6rem 2rem;
+  /* Restaurado padding estándar */
+  overflow: hidden;
+}
+
+/* Ajuste de Layout: Grid equilibrado para evitar cortes */
+.engineering-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px 1fr;
+  /* Columna central ajustada al ancho real del tubo */
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  position: relative;
+}
+
+/* Columna Izquierda y Derecha */
+.engineering-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centrado vertical para compactar */
+  gap: 2rem;
+  /* Gap más pequeño para acercar items */
+}
+
+/* Items de ingeniería */
+.eng-item {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+  overflow: visible;
+  position: relative;
+  z-index: 5;
+  /* Asegurar que el texto esté sobre cualquier superposición */
+}
+
+/* Títulos de los pasos (1, 2, 3...) */
+.eng-item .step-title {
+  font-family: var(--font-main);
+  font-size: clamp(1.1rem, 1.3vw, 1.5rem);
+  /* Ligeramente más pequeño */
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 1.5rem;
+  border: none;
+  background: none;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+
+  /* IMPORTANTE: Wrap para textos largos */
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+/* Título de la Sección de Ingeniería (Match Visual EXACTO con H1 Hero) */
+.pro-sbl-engineering .section-title {
+  /* Usamos la misma regla específica que .sbl-hero-header .section-title */
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-main);
+  font-weight: 700;
+}
+
+/* Subtítulo de la Sección de Ingeniería (Match exacto con Hero Subtitle Tech) */
+.pro-sbl-engineering .section-subtitle {
+  font-family: var(--font-sec);
+  /* Questrial */
+  font-size: clamp(0.9rem, 1.1vw, 1.25rem);
+  color: #FFFFFF !important;
+  text-align: center;
+  margin: 0 auto 3rem;
+  opacity: 1;
+  letter-spacing: 2px;
+  white-space: normal;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 400;
+  max-width: 100%;
+}
+
+/* Barra de gradiente superior */
+.eng-item .grad-bar {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 320px;
+  height: 6px;
+  /* Ligeramente más fina */
+  background: linear-gradient(90deg, #00FFFF 0%, #7000FF 100%);
+  border-radius: 2px;
+}
+
+.eng-item .step-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #dddddd;
+  line-height: 1.6;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+/* Visual Container */
+.engineering-visual {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* Altura automática ajustada a la imagen */
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visual-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tubo-render {
+  height: auto;
+  width: 100%;
+  max-width: 320px;
+  /* Ancho máximo controlado */
+  position: relative;
+  /* Posición relativa para flujo normal */
+  left: auto;
+  transform: none;
+  z-index: 10;
+  object-fit: contain;
+  animation: none;
+  border: none;
+}
+
+/* Etiquetas del Tubo - Eliminadas (integradas en imagen) */
+
+
+/* Responsive Engineering */
+@media (max-width: 1200px) {
+  .engineering-layout {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .engineering-visual {
+    order: -1;
+    /* Visual primero en mobile */
+    height: 500px;
+  }
+
+  .engineering-grid {
+    height: auto;
+    gap: 3rem;
+  }
+
+  /* Ajustar etiquetas en mobile */
+  .label-right-top {
+    right: 15%;
+    top: 5%;
+  }
+
+  .label-right-mid {
+    right: 15%;
+    top: 35%;
+  }
+
+  .label-right-low {
+    right: 15%;
+    bottom: 30%;
+  }
+
+  .label-left {
+    left: 15%;
+    bottom: 20%;
+  }
+}
+
+/* Mantener Performance Styles intactos, solo update margin */
+.pro-sbl-performance {
+  background-color: #000000;
+  position: relative;
+  padding: 6rem 2rem 6rem 2rem;
+  /* Restaurado padding estándar */
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+/* Titulos Generales */
+.pro-sbl-performance .section-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-main);
+  font-weight: 700;
+}
+
+.pro-sbl-performance .section-subtitle {
+  font-family: var(--font-sec);
+  font-size: clamp(0.9rem, 1.1vw, 1.25rem);
+  color: #FFFFFF !important;
+  text-align: center;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  opacity: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  max-width: 100%;
+}
+
+/* Grid de 3 Columnas Simétrico */
+.performance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* --- COLUMNA IZQUIERDA: DETALLES --- */
+.perf-tech-info {
+  text-align: left;
+  /* Alineado a la izquierda */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-right: 0;
+}
+
+.tech-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* Alinear contenido a la derecha */
+}
+
+/* Títulos de Items */
+.tech-box .step-title {
+  font-family: var(--font-main);
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Barras de Gradiente (Izq) */
+.grad-bar-tech {
+  width: 60px;
+  height: 3px;
+  background: var(--grad-premium);
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.tech-box .step-desc {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.tech-box .step-desc strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* --- COLUMNA CENTRAL: IMAGEN --- */
+.performance-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.componentes-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(24, 99, 220, 0.1));
+}
+
+
+/* --- COLUMNA DERECHA: DASHBOARD --- */
+.perf-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 1rem;
+  text-align: left;
+  /* Alineado a la lectura natural */
+  justify-content: center;
+}
+
+.data-card-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.data-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+/* Números Gigantes */
+.data-val-big {
+  font-family: var(--font-main);
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-weight: 800;
+  line-height: 0.9;
+}
+
+/* Iconos de Tendencia */
+.trend-icon {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #00f2ff, #9d00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Colores Específicos */
+.color-cyan-purple {
+  background: linear-gradient(135deg, #00f2ff, #9d00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-cyan {
+  background: linear-gradient(135deg, #00f2ff, #00ffaa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-purple {
+  background: linear-gradient(135deg, #9d00ff, #ea2ba1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.data-title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: clamp(1.1rem, 1.3vw, 1.4rem);
+  /* Aumentado */
+  letter-spacing: 0.5px;
+  margin-top: 0.3rem;
+}
+
+.data-sub {
+  font-family: var(--font-sec);
+  font-size: 1rem;
+  /* Aumentado */
+  color: #aaa;
+  /* Más legible */
+  line-height: 1.4;
+  max-width: 300px;
+  /* Evitar líneas muy largas */
+}
+
+/* Barra de Progreso */
+.progress-bar-bg {
+  width: 100%;
+  max-width: 250px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00f2ff, #9d00ff);
+  border-radius: 3px;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .performance-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .perf-tech-info {
+    text-align: center;
+    align-items: center;
+    /* Centrar Flex items */
+    padding-right: 0;
+    order: 2;
+  }
+
+  .tech-box {
+    align-items: center;
+  }
+
+  /* Forzar centro */
+
+  .performance-visual {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .perf-dashboard {
+    text-align: center;
+    padding-left: 0;
+    align-items: center;
+    order: 3;
+  }
+
+  .data-main {
+    justify-content: center;
+  }
+
+  .progress-bar-bg {
+    margin: 0.5rem auto;
+  }
+}
+
+@keyframes floatTub {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-25px) rotate(2deg);
+  }
+}
+
+/* Nota: Secciones técnicas de SBL completadas bajo demanda del usuario. */
 
 /* Nota: Las secciones 1, 2, 3, 8, 9 y 10 estan COMPLETADAS y VALIDADAS. */
 
