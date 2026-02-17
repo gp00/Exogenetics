@@ -56,6 +56,7 @@ El proyecto se organiza como un sistema de áreas independientes conectadas por 
 
 ### 3. Área Profesionales (`Profesionales.html`)
 *   **Propósito:** Información técnica de alto nivel, estudios clínicos y especificaciones.
+*   **Estado:** (COMPLETADO ✅) Integración total de SBL.PRP.3 y MCT (Unidad, Kit, Exosomas). Arquitectura responsiva validada hasta 13 secciones.
 
 ### 🛠️ CONVENCIONES DE NAVEGACIÓN
 - **Salida al Portal:** La opción `Inicio` siempre debe volver a `index.html`.

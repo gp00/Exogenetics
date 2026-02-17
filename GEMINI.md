@@ -177,10 +177,9 @@ Se ha implementado un sistema de envío de formularios sin necesidad de backend 
     *   **Diseño:** Panel de contacto ensanchado (`grid-template-columns: 1fr 1.3fr`) para una presencia visual más robusta.
 
 ### 8.3. Otras Optimizaciones
-- **Auditoría de Assets:** Mantener la carpeta `images/` libre de archivos huérfanos utilizando el protocolo de limpieza en `images/borrame/`.
-- **Refactorización Hero:** Pendiente migrar el Hero de `pacientes.html` al sistema de Grid fluido (Fase 2 de Refactorización).
-- **Refactorización Profesionales (Completado ✅):** Se ha integrado el capítulo técnico SBL.PRP.3 (Introducción, Ingeniería y Rendimiento) en `Profesionales.html`, unificando el diseño y optimizando la responsividad.
-- **Auditoría Técnica:** Los hallazgos se encuentran en `AUDITORIA_PROFESIONALES.md`.
+- **Refactorización Profesionales (Completado ✅):** Se ha integrado el ecosistema técnico completo (SBL.PRP.3 y MCT System) en `Profesionales.html`, unificando el diseño bajo el estándar de 13 secciones numeradas y optimizando la responsividad global.
+- **Limpieza de Activos y Scripts (Completado ✅):** Se han eliminado 29 imágenes huérfanas y todos los scripts de utilidad del directorio raíz, manteniendo un entorno de producción limpio.
+- **Auditoría Técnica:** Los hallazgos actualizados se encuentran en `AUDITORIA_PROFESIONALES.md`.
 
 ---
 

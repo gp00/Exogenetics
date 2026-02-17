@@ -8,7 +8,7 @@ Se ha realizado una revisión completa de la estructura HTML y estilos CSS de la
 ### A. Estructura y Semántica (✅ Validado)
 - **Hitos de Navegación:** La barra de navegación y los enlaces internos funcionan correctamente.
 - **Jerarquía:** Uso correcto de `h1`, `h2` y `h3` para estructurar el contenido.
-- **Integridad:** No se detectaron etiquetas HTML rotas ni errores de sintaxis crítica en las nuevas secciones (SBL Intro, Ingeniería, Rendimiento).
+- **Integridad:** Estructura técnica robusta en las secciones de SBL.PRP.3 y la nueva triada MCT (Unidad, Kit, Exosomas). Sin errores de sintaxis.
 
 ### B. Estilos y Diseño (✅ Validado)
 - **Consistencia de Espaciado:** Se ha unificado el `padding` vertical a **6rem** en todas las secciones principales, eliminando los saltos visuales bruscos y mejorando el "aire" del diseño.
@@ -17,14 +17,14 @@ Se ha realizado una revisión completa de la estructura HTML y estilos CSS de la
 
 ### C. Responsividad (✅ Validado)
 - **Móvil (<1024px):**
-    - **SBL Intro:** Corregido el error de grid. Ahora los elementos se apilan verticalmente, mejorando drásticamente la legibilidad.
-    - **Ingeniería/Rendimiento:** Grid adaptado correctamente a columna única.
+    - **MCT (Unidad/Kit/Exosomas):** Implementada grilla responsiva `.mct-grid` que colapsa correctamente en móviles. Imágenes con `loading="lazy"`.
     - **Menú:** Comportamiento fluido del menú hamburguesa.
 
 ### D. Observaciones
-1.  **Sección MCT (Page 7):** Actualmente solo contiene el título. Verificar si está pendiente de contenido o es intencional.
-    - *Código:* `<section class="pro-mct...">...</section>`
-2.  **Enlaces de Navegación:** El menú "CÓMO FUNCIONA" apunta a `ProfesionalesPRP.html`. Dado que esta página (`Profesionales.html`) ahora contiene gran parte de esa información técnica, sugerimos evaluar si estos enlaces deberían apuntar a las anclas locales (`#prp-tecnico`) para una experiencia de "Single Page Application" más fluida, o mantenerse como páginas externas separadas.
+1.  **Tecnología MCT (Completado ✅):** Se han integrado las tres secciones técnicas (Unidad, Kit, Exosomas) sustituyendo el marcador de posición anterior. El diseño es coherente con el estándar SBL.
+    - *Optimización:* Uso de la nueva clase `.mct-literal-banner` para cierres de sección neón.
+2.  **Numeración de Secciones:** Se ha verificado la renumeración completa hasta la Sección 13 (Workflow).
+3.  **Navegación:** Se recomienda mantener los anclajes locales para mejorar la UX dentro de la misma página.
 
 ## 3. Conclusión
 La página está lista para producción desde el punto de vista técnico y de diseño responsive.
