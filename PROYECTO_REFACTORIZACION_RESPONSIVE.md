@@ -54,9 +54,12 @@ El proyecto se organiza como un sistema de áreas independientes conectadas por 
     *   `pacientesMCT.html`: Detalle de Exosomas y Mensajeros Celulares. (COMPLETADO)
     *   `pacientesQN.html`: Mapeo de patologías y soluciones. (PENDIENTE)
 
-### 3. Área Profesionales (`Profesionales.html`)
+### 3. Área Profesionales (`Profesionales.html` y subpáginas)
 *   **Propósito:** Información técnica de alto nivel, estudios clínicos y especificaciones.
-*   **Estado:** (COMPLETADO ✅) Integración total de SBL.PRP.3 y MCT (Unidad, Kit, Exosomas). Arquitectura responsiva validada hasta 13 secciones.
+*   **Estado:** 
+    *   `Profesionales.html`: (COMPLETADO ✅) Integración total de SBL.PRP.3 y MCT (Unidad, Kit, Exosomas). Arquitectura responsiva validada hasta 13 secciones. Alineación de grandes títulos (Secciones de MCT, Seguridad) estabilizada en todos los resizes (`width: fit-content`).
+    *   `ProfesionalesPRP.html`: (COMPLETADO ✅) Refactorización de Perfil de Pureza (Sección 5), Ficha Técnica (Sección 12), botón "Back to Top" global y secciones de Parallax "Ventana Fija". Rediseño e integración responsiva al 100% validada en dispositivos móviles.
+    *   `ProfesionalesMCT.html`: (EN PROGRESO 🛠️) Implementación de botón "Back to Top" y estructura base.
 
 ### 🛠️ CONVENCIONES DE NAVEGACIÓN
 - **Salida al Portal:** La opción `Inicio` siempre debe volver a `index.html`.

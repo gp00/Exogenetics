@@ -36,10 +36,20 @@ Estamos migrando de una estructura rígida basada en `px` a un sistema **fluido 
 | **Footer**         | 🟢 Completado | Estructura centrada fluida   | -                      |
 | **Página PRP**     | 🟢 Completado | Flujo 8 secciones + CTA      | Audit de performance   |
 | **Página MCT**     | 🟢 Completado | Reconstrucción fiel (3.jpg)  | -                      |
+| **ProfesionalesPRP.html** | 🟢 Completado | Responsive design + ARIA    | -                      |
 | **Imágenes (Assets)**| 🟡 En Proceso | WebP conversion              | Optimizar pesos        |
 ```
 
 ## 📝 Notas de Contexto Reciente
+- **Optimización Responsive ProfesionalesPRP.html Completada ✅**: Se aplicó el skill `responsive-design` para optimizar completamente la página:
+  - Extraídos ~800 líneas de estilos inline al CSS (namespace `.prp-page`)
+  - Aplicada tipografía fluida con `clamp()` en todos los encabezados
+  - Mejoras de accesibilidad con ARIA labels y roles
+  - Corregida la sección 11 (Algoritmo Terapéutico) para mostrar dos columnas correctamente
+  - Ficha Técnica (Sección 12): Refactorización visual completada y validada en su comportamiento responsivo móvil.
+  - Reducción del 10.4% en líneas HTML (872 → 781)
+- **Correcciones UI/Centrado (Profesionales.html, pacientes.html, pacientesMCT.html) Completadas ✅**: 
+  - Se han centrado matemáticamente los grandes títulos de sección de `Profesionales.html` (MCT, Exosomas, Seguridad) mediante una regla CSS que soluciona el conflicto natural entre gradientes (`-webkit-background-clip`) y `align-center` (`display: inline-block` a `display: block` con `width: fit-content()`). Extendido a todo el ecosistema.
 - Se ha corregido un problema de solapamiento en `pacientes.html` donde el contenedor central bloqueaba el efecto hover de las imágenes de Reumatología y Tricología. Se aumentó el `z-index` de `.hero-side-images` a 20.
 - Se ha completado la **Página MCT** (`pacientesMCT.html`) siguiendo fielmente las referencias visuales y añadiendo un diseño de red neuronal dinámico para los "WhatsApp" del cuerpo.
 - Se ha establecido el estándar de **fondos moleculares enmarcados** (`background-size: 100% 100%`) para asegurar que las figuras de las esquinas sean visibles en todos los dispositivos.

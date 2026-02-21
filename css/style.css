@@ -24,6 +24,7 @@
   --font-sec: 'Questrial', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
+  --font-header: 'Barlow Condensed', sans-serif;
 
   /* Spacing */
   --section-padding: 3.5rem;
@@ -312,6 +313,15 @@ section {
   filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.3));
   line-height: 1.1;
 }
+
+/* Fix para centrar ttulos con gradientes que cambian a inline-block */
+h1.centered, h2.centered, h3.centered, .section-title.centered {
+  display: block !important;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .btn-premium {
   display: inline-block;
@@ -3389,11 +3399,13 @@ td strong {
   margin-top: 10px;
 }
 
-.prp-steps-container {
+.prp-proceso .prp-steps-container {
   position: relative;
   max-width: 1200px;
   margin: 0 auto clamp(60px, 8vw, 100px);
   padding: 0 5%;
+  display: block;
+  /* Forzar bloque para anular posibles grids de otras secciones */
 }
 
 /* Horizontal Decorative Line */
@@ -3412,9 +3424,9 @@ td strong {
 
 .prp-steps-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: clamp(30px, 8vw, 100px);
   position: relative;
   z-index: 2;
 }
@@ -3474,7 +3486,10 @@ td strong {
   color: #fff;
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
   font-size: clamp(1.2rem, 3vw, 2rem);
-  margin-top: 40px;
+  margin-top: 60px;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -6384,5 +6399,2117 @@ td strong {
 
   .mct-section {
     padding: 5rem 0;
+  }
+}
+
+/* ==========================================================================
+   4. PRP PAGE SPECIFIC STYLES (ProfesionalesPRP.html)
+   ========================================================================== */
+
+/* Hero Section (Page 1) */
+.prp-hero {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, rgba(24, 99, 220, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* ==========================================================================
+   4.1 PROTOCOL SECTION - OPTIMIZED STYLES
+   ========================================================================== */
+
+.prp-protocol-section {
+  background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+  padding: 6rem 0;
+}
+
+.prp-protocol-section .protocol-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.prp-protocol-section .protocol-step {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.prp-protocol-section .protocol-icon-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.prp-protocol-section .protocol-icon-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.prp-protocol-section .protocol-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prp-protocol-section .protocol-sublabel {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.prp-protocol-section .protocol-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Resuspension Wrapper */
+.prp-protocol-section .resuspension-wrapper {
+  flex: 2.8;
+  min-width: 320px;
+  background: none;
+  border: none;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.prp-protocol-section .resuspension-header {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.8rem;
+}
+
+.prp-protocol-section .resuspension-header h4 {
+  color: var(--color-accent-blue);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  margin: 0;
+  display: inline-block;
+}
+
+.prp-protocol-section .resuspension-header span {
+  color: #ccc;
+  font-size: 1rem;
+  margin-left: 0.8rem;
+  font-style: italic;
+}
+
+.prp-protocol-section .resuspension-box {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.prp-protocol-section .resuspension-image {
+  flex-shrink: 0;
+  width: 130px;
+}
+
+.prp-protocol-section .resuspension-image img {
+  width: 100%;
+  height: auto;
+}
+
+.prp-protocol-section .resuspension-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.prp-protocol-section .resuspension-text p {
+  margin: 0 0 1rem 0;
+}
+
+.prp-protocol-section .resuspension-text strong {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   4.2 HUD GRID - MODULACIÓN MICROAMBIENTE
+   ========================================================================== */
+
+.prp-section .hud-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+
+.prp-section .hud-card {
+  background: rgba(0, 242, 255, 0.02);
+  border-color: rgba(0, 242, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.prp-section .hud-card.magenta {
+  background: rgba(234, 43, 161, 0.02);
+  border-color: rgba(234, 43, 161, 0.1);
+}
+
+.prp-section .hud-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.prp-section .hud-image-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 15px rgba(0, 242, 255, 0.2));
+}
+
+.prp-section .hud-card.magenta .hud-image-wrapper img {
+  filter: drop-shadow(0 0 15px rgba(234, 43, 161, 0.2));
+}
+
+.prp-section .hud-title {
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  margin-bottom: 1rem;
+  font-family: var(--font-main);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.prp-section .hud-desc {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   4.3 ALGORITHM SECTION - SELECCIÓN TERAPÉUTICA
+   ========================================================================== */
+
+.algorithm-section {
+  padding: 6rem 0;
+  background: #000;
+}
+
+.algorithm-section .algorithm-table-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 242, 255, 0.03) 0%, rgba(234, 43, 161, 0.03) 100%), rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 242, 255, 0.05);
+}
+
+@media (max-width: 900px) {
+  .algorithm-section .algorithm-table-container {
+    grid-template-columns: 1fr;
+  }
+
+  .algorithm-section .algo-column.left {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.algorithm-section .algo-column {
+  position: relative;
+}
+
+.algorithm-section .algo-column.left {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.algorithm-section .algo-table-header {
+  padding: 1.2rem;
+  border-bottom: 2px solid #00f2ff;
+  text-align: center;
+}
+
+.algorithm-section .algo-column.left .algo-table-header {
+  background: linear-gradient(90deg, rgba(0, 242, 255, 0.15) 0%, transparent 100%);
+  border-bottom-color: #00f2ff;
+}
+
+.algorithm-section .algo-column.right .algo-table-header {
+  background: linear-gradient(270deg, rgba(234, 43, 161, 0.15) 0%, transparent 100%);
+  border-bottom-color: #ea2ba1;
+}
+
+.algorithm-section .algo-table-header h3 {
+  color: #00f2ff;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  margin-bottom: 0.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+  font-family: var(--font-main);
+}
+
+.algorithm-section .algo-column.right .algo-table-header h3 {
+  color: #ea2ba1;
+  text-shadow: 0 0 10px rgba(234, 43, 161, 0.5);
+}
+
+.algorithm-section .algo-table-header p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.algorithm-section .algo-table-body {
+  padding: 1.2rem;
+}
+
+.algorithm-section .algo-row {
+  text-align: center;
+}
+
+.algorithm-section .algo-row h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+  font-family: var(--font-main);
+}
+
+.algorithm-section .algo-row p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.algorithm-section .algo-row-arrow {
+  text-align: center;
+  color: #00f2ff;
+  font-size: 1.8rem;
+  margin: 0.4rem 0;
+  filter: drop-shadow(0 0 5px #00f2ff);
+}
+
+.algorithm-section .algo-column.right .algo-row-arrow {
+  color: #ea2ba1;
+  filter: drop-shadow(0 0 5px #ea2ba1);
+}
+
+.algorithm-section .algo-footer-text {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 1.5rem;
+}
+
+.algorithm-section .algo-footer-text p {
+  margin: 0;
+}
+
+/* Datasheet section title centering */
+.datasheet-section .prp-title-main,
+.datasheet-section .prp-title-main#ficha-tecnica-title {
+  text-align: center !important;
+  width: 100%;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+/* ==========================================================================
+   4.4 DATASHEET SECTION - FICHA TÉCNICA
+   ========================================================================== */
+
+.datasheet-section {
+  background: #000;
+  padding: 6rem 0;
+}
+
+.datasheet-section .datasheet-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #00f2ff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.datasheet-section .manual-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.datasheet-section .manual-table thead tr {
+  background: linear-gradient(90deg, rgba(0, 242, 255, 0.15) 0%, transparent 100%);
+  border-bottom: 2px solid #00f2ff;
+}
+
+.datasheet-section .manual-table th {
+  padding: 1.5rem;
+  text-align: center;
+  border-right: 1px solid #00f2ff;
+}
+
+.datasheet-section .manual-table th h3 {
+  color: #00f2ff;
+  font-size: clamp(1.6rem, 2.2vw, 1.85rem);
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(0, 242, 255, 0.6);
+  text-transform: uppercase;
+  font-family: var(--font-header);
+}
+
+.datasheet-section .manual-table tbody tr {
+  border-bottom: 1px solid rgba(0, 242, 255, 0.3);
+}
+
+.datasheet-section .manual-table tbody td {
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-right: 1px solid rgba(0, 242, 255, 0.3);
+}
+
+.datasheet-section .manual-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.datasheet-section .manual-table .val-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.datasheet-section .manual-table .check-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Datasheet Footer Box */
+.datasheet-section .prp-evidence-box {
+  max-width: 800px;
+  margin: 2.5rem auto 0;
+  padding: 2.5rem;
+  background: rgba(234, 43, 161, 0.05);
+  border-left: 4px solid var(--color-accent-magenta);
+  border-radius: 8px;
+}
+
+.datasheet-section .prp-evidence-box .prp-text {
+  color: #fff;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.6;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Responsive Datasheet */
+@media (max-width: 768px) {
+  .datasheet-section .manual-table {
+    font-size: 0.9rem;
+  }
+
+  .datasheet-section .manual-table th,
+  .datasheet-section .manual-table td {
+    padding: 0.8rem 1rem;
+  }
+
+  .datasheet-section .manual-table th h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ==========================================================================
+   4.5 MECH FLOW CONTAINER - MECANISMO DE ACCIÓN
+   ========================================================================== */
+
+.prp-section .mech-flow-container {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.prp-section .mech-flow-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.15));
+}
+
+/* ==========================================================================
+   4.6 ALGO HEADER - ALGORITMO HEADER
+   ========================================================================== */
+
+.algorithm-section .algo-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.algorithm-section .algo-header .prp-title-main {
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================================================
+   4.7 PRP SECTION BASE STYLES
+   ========================================================================== */
+
+.prp-main-content {
+  min-height: 70vh;
+}
+
+.prp-section {
+  padding: 6rem 0;
+}
+
+.prp-section .prp-title-main {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.prp-section .full-width-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Section dividers */
+.page-3,
+.page-4,
+.page-7,
+.page-9,
+.page-10 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hero section specific padding */
+.prp-hero {
+  padding-top: 4rem;
+}
+
+.prp-hero .prp-content-wrapper {
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .prp-hero .prp-content-wrapper {
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-areas:
+      "text image"
+      "specs image"
+      "footer image";
+  }
+
+  .prp-title-main {
+    grid-area: text;
+    text-align: left;
+  }
+
+  .prp-subtitle {
+    text-align: left;
+  }
+
+  .prp-image-container {
+    grid-area: image;
+    align-self: start;
+    position: sticky;
+    top: 120px;
+  }
+
+  .prp-feature-list {
+    grid-area: specs;
+  }
+
+  .prp-footer-note {
+    grid-area: footer;
+  }
+}
+
+.prp-title-main {
+  font-family: var(--font-main);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  background: var(--grad-premium);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  text-shadow: 0 0 30px rgba(234, 43, 161, 0.3);
+}
+
+.prp-subtitle {
+  font-family: var(--font-main);
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  color: #888888;
+  /* Gris medio sólido para el texto general */
+  margin-bottom: 3rem;
+  font-weight: 500;
+  border-left: 5px solid var(--color-accent-blue);
+  padding-left: 2rem;
+  text-transform: none;
+
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.prp-highlight {
+  color: #dbdbdb;
+  /* Blanco suavizado */
+  font-weight: 600;
+  text-shadow: none !important;
+}
+
+.prp-image-container img {
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(24, 99, 220, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.prp-image-container img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(24, 99, 220, 0.4);
+}
+
+/* Technical Specs List */
+.prp-feature-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.prp-feature-item {
+  background: rgba(33, 33, 33, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-left: none !important;
+  /* Override inline styles */
+}
+
+.prp-feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--grad-premium);
+}
+
+.prp-feature-item:hover {
+  background: rgba(33, 33, 33, 0.7);
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.prp-feature-text {
+  font-family: var(--font-body);
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.prp-feature-highlight {
+  color: var(--color-accent-blue);
+  font-weight: 700;
+}
+
+/* Technical Data List (No boxes) */
+.prp-data-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prp-data-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.prp-data-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.data-label {
+  display: block;
+  font-family: var(--font-main);
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: none;
+  margin-bottom: 0.2rem;
+}
+
+.data-value {
+  display: block;
+  font-family: var(--font-body);
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.prp-footer-note {
+  font-family: var(--font-body);
+  font-size: 0.9rem !important;
+  color: #888 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  margin-top: 3rem !important;
+  padding-top: 1.5rem !important;
+  font-style: italic;
+}
+
+/* Comparison Section (Page 2) */
+.prp-comparison-section {
+  background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 900px) {
+  .comparison-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.comparison-card.conventional {
+  border-top: 4px solid #666;
+}
+
+.comparison-card.sbl {
+  border-top: 4px solid var(--color-accent-magenta);
+  background: linear-gradient(180deg, rgba(234, 43, 161, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  box-shadow: 0 0 30px rgba(234, 43, 161, 0.1);
+}
+
+.comparison-card:hover {
+  transform: translateY(-5px);
+}
+
+.comparison-title {
+  font-family: var(--font-main);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.comparison-card.conventional .comparison-title {
+  color: #888;
+}
+
+.comparison-card.sbl .comparison-title {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(234, 43, 161, 0.5);
+}
+
+.comparison-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.comparison-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.comparison-card.sbl .comparison-list li {
+  color: #fff;
+  border-bottom-color: rgba(234, 43, 161, 0.2);
+}
+
+.comparison-icon {
+  height: 80px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  filter: grayscale(1);
+  opacity: 0.7;
+}
+
+.comparison-card.sbl .comparison-icon {
+  filter: none;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(234, 43, 161, 0.4));
+}
+
+.central-concept-box {
+  grid-column: 1 / -1;
+  background: rgba(24, 99, 220, 0.1);
+  border: 1px solid var(--color-accent-blue);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.central-concept-text {
+  font-family: var(--font-sec);
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0;
+}
+
+/* Split Layout (General for PRP Sections) */
+.prp-split-layout .prp-content-wrapper {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .prp-split-layout .prp-content-wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .prp-split-layout .full-width-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Metrics (Page 4) */
+.page-4 .prp-content-wrapper {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .page-4 .prp-content-wrapper {
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: flex-start;
+  }
+}
+
+/* New SBL Specifications List Style */
+.sbl-specs-container {
+  margin-top: 1rem;
+}
+
+.sbl-spec-title {
+  font-family: var(--font-main);
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.sbl-spec-underline {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #EA2BA1, #1863DC);
+  margin-bottom: 2.5rem;
+}
+
+.sbl-specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sbl-spec-item {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.sbl-spec-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-blue);
+  font-size: 1.8rem;
+  line-height: 1;
+  top: -2px;
+}
+
+.sbl-spec-value {
+  color: var(--color-accent-blue);
+  font-weight: 700;
+}
+
+.prp-metrics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-card.highlight {
+  background: linear-gradient(90deg, rgba(24, 99, 220, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  border-left: 4px solid var(--color-accent-blue);
+}
+
+.metric-label {
+  font-family: var(--font-body);
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.metric-value {
+  font-family: var(--font-main);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+.metric-card.highlight .metric-value {
+  background: var(--grad-premium);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Page 7: Standardization Steps */
+.prp-steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.prp-step-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.prp-step-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.prp-step-title {
+  font-family: var(--font-main);
+  color: var(--color-accent-blue);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prp-step-desc {
+  font-family: var(--font-body);
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.prp-mechanism-box {
+  background: rgba(24, 99, 220, 0.05);
+  border-left: 4px solid var(--color-accent-blue);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Page 8: Process Timeline */
+.prp-timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .prp-timeline-container {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+.prp-timeline-step {
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.prp-timeline-arrow {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .prp-timeline-arrow {
+    display: block;
+    font-size: 2rem;
+    color: var(--color-accent-blue);
+    align-self: center;
+  }
+}
+
+.prp-timeline-highlight {
+  border: 1px solid var(--color-accent-magenta);
+  background: linear-gradient(135deg, rgba(234, 43, 161, 0.05), rgba(0, 0, 0, 0));
+}
+
+.prp-timeline-title {
+  font-family: var(--font-main);
+  color: #fff;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.prp-timeline-desc {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Page 9: Info Cards */
+.prp-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.prp-info-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.prp-info-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.prp-info-title {
+  font-family: var(--font-main);
+  color: var(--color-accent-blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.prp-info-text {
+  font-family: var(--font-body);
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Page 10: Mechanism of Action */
+.prp-mechanism-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.prp-mechanism-diagram {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .prp-mechanism-diagram {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+.prp-mechanism-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-accent-blue);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.prp-mechanism-arrow {
+  color: var(--color-accent-magenta);
+  font-size: 2rem;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 900px) {
+  .prp-mechanism-arrow {
+    transform: rotate(0deg);
+  }
+}
+
+.prp-evidence-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(24, 99, 220, 0.05) 100%);
+  border-left: 4px solid var(--color-accent-magenta);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0 8px 8px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page 12: Technical Specs Table */
+.prp-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.prp-specs-table th,
+.prp-specs-table td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.prp-specs-table th {
+  background: rgba(24, 99, 220, 0.1);
+  color: var(--color-accent-blue);
+  font-family: var(--font-main);
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.prp-specs-table td {
+  color: #ddd;
+  font-family: var(--font-body);
+}
+
+.prp-specs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.prp-specs-highlight {
+  color: var(--color-accent-magenta);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+  .prp-specs-table th,
+  .prp-specs-table td {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .prp-specs-highlight {
+    font-size: 0.9rem;
+  }
+}
+
+/* Comparison Grid (P9, P11) */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.comparison-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.comparison-card.conventional {
+  border-top: 4px solid var(--color-accent-blue);
+}
+
+.comparison-card.sbl {
+  border-top: 4px solid var(--color-accent-magenta);
+}
+
+.comparison-title {
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.comparison-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.comparison-image-container {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.comparison-card:hover .comparison-image {
+  transform: scale(1.05);
+}
+
+/* --- SECTION 5: PURITY PROFILE --- */
+.purity-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Tablet & Desktop: Force 3 columns in one row using Flexbox - OVERRIDES */
+@media (min-width: 900px) {
+  .purity-grid {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    align-items: center !important;
+    /* Vertically centered as requested */
+    gap: 2.5rem !important;
+  }
+
+  .purity-pie-chart-container {
+    flex: 0 0 220px !important;
+    max-width: 220px !important;
+    justify-content: flex-start !important;
+  }
+
+  .purity-legend {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .purity-info-box {
+    flex: 0 1 600px !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .purity-grid {
+    gap: 3.5rem !important;
+  }
+}
+
+/* Pie Chart Styling */
+.purity-pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.purity-pie-chart {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: conic-gradient(#1863dc 0% 95%,
+      #00ffff 95% 99.2%,
+      #ea2ba1 99.2% 99.7%,
+      #aeaeae 99.7% 100%);
+  box-shadow: 0 0 40px rgba(24, 99, 220, 0.25),
+    0 0 80px rgba(0, 255, 255, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(24, 99, 220, 0.3);
+}
+
+/* Decorative Outer Ring */
+.purity-pie-chart::before {
+  content: '';
+  position: absolute;
+  width: 112%;
+  height: 112%;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  animation: pulse-ring 4s infinite ease-in-out;
+}
+
+/* Decorative Inner Ring (Hole) */
+.purity-pie-chart::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  /* Thicker ring requested */
+  height: 150px;
+  background: #000;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.purity-pie-chart-inner {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border: 1px dashed rgba(24, 99, 220, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+  animation: spin-slow 60s linear infinite;
+}
+
+.purity-info-box {
+  max-width: 450px;
+  /* Ensure it doesn't force a wrap */
+  width: 100%;
+  justify-self: end;
+}
+
+/* Labels Legend Styling (Middle Column) */
+.purity-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.legend-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.legend-item:hover {
+  transform: translateX(5px);
+}
+
+.legend-item strong {
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.legend-item span.sub-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* Colors for specific legend items */
+.legend-blue {
+  color: #00ffff;
+}
+
+.legend-blue::before {
+  background: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.legend-magenta {
+  color: #ea2ba1;
+}
+
+.legend-magenta::before {
+  background: #ea2ba1;
+  box-shadow: 0 0 10px #ea2ba1;
+}
+
+.legend-grey {
+  color: #aeaeae;
+}
+
+.legend-grey::before {
+  background: #aeaeae;
+  box-shadow: 0 0 10px #aeaeae;
+}
+
+/* Original legend-item styles that are now superseded by the new .legend-item and color classes */
+/*
+.legend-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #fff;
+  font-family: var(--font-text);
+}
+
+.legend-item .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .purity-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* ==========================================================================
+   OBSOLETE: SECTION 11 - Using new algorithm-section styles from 4.3
+   ========================================================================== */
+
+/* --- SECTION 8: PROTOCOLO OPERATIVO (Redesign) --- */
+.prp-protocol-section {
+  background: radial-gradient(circle at center, #111a22 0%, #000000 100%);
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.prp-protocol-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 242, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 242, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.protocol-title {
+  text-align: center;
+  font-family: var(--font-header);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.protocol-timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.protocol-step {
+  text-align: center;
+  flex: 0 0 auto;
+  width: 180px;
+}
+
+.protocol-step img {
+  height: 120px;
+  width: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.protocol-label {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.protocol-sublabel {
+  color: #8899a6;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.protocol-arrow {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0.5rem;
+}
+
+/* Resuspension Highlight Box */
+.resuspension-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 380px;
+}
+
+.resuspension-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.resuspension-header h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.resuspension-header p {
+  color: var(--color-cyan-neon, #00f2ff);
+  font-size: 1.1rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.resuspension-box {
+  background: rgba(10, 16, 20, 0.9);
+  border: 2px solid var(--color-cyan-neon, #00f2ff);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px rgba(0, 242, 255, 0.15), inset 0 0 20px rgba(0, 242, 255, 0.05);
+  position: relative;
+}
+
+.resuspension-box img {
+  height: 160px;
+  width: auto;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+.resuspension-text p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #cbd5e0;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.resuspension-text strong {
+  color: var(--color-cyan-neon, #00f2ff);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Cyan 3D Arrow */
+.arrow-cyan-container {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+/* Footer Logo */
+.protocol-logo {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.protocol-logo svg {
+  width: 40px;
+  height: 40px;
+}
+
+.protocol-logo-text p {
+  margin: 0;
+  line-height: 1;
+}
+
+.protocol-logo-brand {
+  color: #fff;
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.protocol-logo-sub {
+  color: var(--color-cyan-neon, #00f2ff);
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 992px) {
+  .protocol-timeline {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .protocol-arrow {
+    transform: rotate(90deg);
+  }
+
+  .arrow-cyan-container {
+    transform: rotate(90deg);
+  }
+}
+
+/* --- SECTION 9: MODULACIÓN MICROAMBIENTE (Redesign) --- */
+.hud-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+
+.hud-card {
+  background: rgba(10, 10, 10, 0.5);
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.hud-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #333;
+}
+
+.hud-card.cyan::before {
+  background: var(--color-cyan-neon, #00f2ff);
+}
+
+.hud-card.magenta::before {
+  background: var(--color-accent-magenta, #ff0080);
+}
+
+.hud-circle-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  animation: spin-slow 20s linear infinite;
+}
+
+.hud-card.cyan .hud-circle {
+  border-color: rgba(0, 242, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+.hud-card.magenta .hud-circle {
+  border-color: rgba(234, 43, 161, 0.2);
+  box-shadow: 0 0 20px rgba(234, 43, 161, 0.1);
+}
+
+.hud-icon-inner {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hud-title {
+  font-family: var(--font-header);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.hud-desc {
+  font-family: var(--font-text);
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hud-card.cyan .hud-title {
+  color: var(--color-cyan-neon, #00f2ff);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+.hud-card.magenta .hud-title {
+  color: var(--color-accent-magenta, #ff0080);
+  text-shadow: 0 0 10px rgba(234, 43, 161, 0.3);
+}
+
+/* --- SECTION 10: MECANISMO DE ACCIÓN (Redesign) --- */
+.mech-flow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mech-main-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.mech-node {
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  min-width: 200px;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.mech-node.monocyte {
+  border-color: rgba(0, 242, 255, 0.3);
+}
+
+.mech-node.macrophage {
+  border-color: rgba(234, 43, 161, 0.3);
+  box-shadow: 0 0 30px rgba(234, 43, 161, 0.1);
+}
+
+.mech-icon-box {
+  margin-bottom: 1rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mech-title {
+  font-family: var(--font-header);
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.mech-subtitle {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.mech-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+  gap: 0.5rem;
+}
+
+.mech-arrow-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #333, #666, #333);
+}
+
+.mech-arrow-text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mech-effects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.effect-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.effect-card:hover {
+  transform: translateY(-5px);
+  border-color: #444;
+}
+
+.effect-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  color: #aaa;
+}
+
+.effect-label {
+  color: #ddd;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hud-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mech-main-stage {
+    flex-direction: column;
+  }
+
+  .mech-arrow {
+    transform: rotate(90deg);
+    padding: 1rem 0;
+  }
+
+  .mech-arrow-line {
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(180deg, #333, #666, #333);
+  }
+}
+
+/* --- SECTION 8 ICON STYLES (SVG Replacement) --- */
+.protocol-icon-wrapper {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.3));
+}
+
+.resuspension-icon {
+  height: 120px;
+  /* Adjusted to fit better than old img */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+}
+
+.resuspension-box {
+  text-align: center;
+  /* Helper to center text inside */
+}
+
+/* --- SECTION 7: SOLID BARRIER TUBE (CSS Component) --- */
+.solid-barrier-tube {
+  width: 50px;
+  height: 140px;
+  background: linear-gradient(to bottom,
+      rgba(255, 215, 0, 0.1) 0%,
+      rgba(255, 215, 0, 0.3) 45%,
+      /* Plasma */
+      rgba(240, 248, 255, 0.9) 45%,
+      rgba(240, 248, 255, 0.9) 48%,
+      /* Gel Barrier */
+      rgba(139, 0, 0, 0.6) 48%,
+      rgba(139, 0, 0, 0.8) 100%
+      /* RBCs */
+    );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  margin: 0 auto 1rem;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 3px 0 5px rgba(255, 255, 255, 0.05);
+}
+
+.solid-barrier-tube::after {
+  /* Shine */
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 6px;
+  height: 110px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+/* ==========================================================================
+   MOBILE REFINEMENTS & MISSING STYLES (FINAL POLISH 375px)
+   ========================================================================== */
+
+/* 1. Global Overflow Protection */
+body {
+  overflow-x: hidden;
+}
+
+/* 2. PRP Hero Content Wrapper (Replacement for inline style) */
+.prp-hero .prp-content-wrapper {
+  display: grid;
+  gap: 2rem;
+  /* Mobile First: 1 column */
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .prp-hero .prp-content-wrapper {
+    grid-template-columns: 1.2fr 0.8fr;
+    /* Re-affirm desktop layout */
+  }
+}
+
+/* 3. Section 5: Purity Grid */
+.purity-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Mobile default */
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 900px) {
+  .purity-grid {
+    grid-template-columns: 1fr 1fr;
+    /* Desktop 2 col */
+    gap: 4rem;
+  }
+}
+
+.purity-chart-column,
+.purity-info-box {
+  width: 100%;
+}
+
+/* 4. Section 8: Protocol Resuspension Fix */
+@media (max-width: 600px) {
+  .resuspension-wrapper {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .resuspension-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .resuspension-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .protocol-step {
+    width: 100% !important;
+  }
+
+  .arrow-cyan-container {
+    margin: 1rem 0;
+  }
+}
+
+/* 5. Section 9: HUD Grid Spacing */
+@media (max-width: 768px) {
+  .hud-grid {
+    grid-template-columns: 1fr !important;
+    margin-bottom: 3rem;
+  }
+
+  .prp-info-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 6. Section 10: Mechanism Stack */
+@media (max-width: 768px) {
+  .mech-main-stage {
+    flex-direction: column !important;
+  }
+
+  .mech-arrow {
+    transform: rotate(90deg);
+    padding: 1rem 0;
+  }
+
+  .mech-arrow-line {
+    width: 2px !important;
+    height: 60px !important;
+    background: linear-gradient(180deg, #333, #666, #333);
+  }
+
+  .mech-effects-grid {
+    grid-template-columns: 1fr;
+    /* Stack effects on very small screens if needed */
+  }
+}
+
+/* 7. Section 11: Algorithm Stack */
+@media (max-width: 900px) {
+  .algorithm-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .algo-col {
+    border-right: none !important;
+    border-bottom: 1px solid #333;
+    padding: 2rem 1rem;
+  }
+
+  .algo-col:last-child {
+    border-bottom: none;
+  }
+}
+
+/* 8. Section 12: Datasheet Scroll */
+@media (max-width: 768px) {
+  .datasheet-container {
+    overflow-x: auto;
+  }
+
+  .manual-table {
+    min-width: 600px;
+    /* Force scroll */
+  }
+
+  .manual-table th,
+  .manual-table td {
+    white-space: normal;
+    padding: 1rem;
+  }
+}
+
+/* 9. Profesionales.html Stacking (Safety Nets) */
+@media (max-width: 900px) {
+
+  .paradigma-grid,
+  .triada-grid {
+    grid-template-columns: 1fr !important;
+    display: grid;
+    gap: 3rem;
+  }
+
+  .divider-vertical {
+    display: none;
   }
 }
