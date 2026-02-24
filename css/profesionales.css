@@ -25,6 +25,7 @@
   margin-right: auto;
 }
 
+
 .mct-page .section-subtitle {
   font-family: var(--font-main);
   font-size: clamp(1.4rem, 3vw, 2.6rem);
@@ -1147,56 +1148,64 @@
 /* Section 12: Pillars Grid */
 .mct-pillars-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 4rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  margin-top: 5rem;
+
+  max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
 }
+
 
 .mct-pillar {
-  background: rgba(10, 10, 10, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 3rem 2rem;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 3rem 2.5rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  transition: all 0.3s ease;
+  gap: 3rem;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
 }
 
+/* Glow Effects based on 12.jpg pattern */
 .mct-pillar:nth-child(1),
 .mct-pillar:nth-child(4) {
-  border-color: rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.05);
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25), inset 0 0 15px rgba(0, 255, 255, 0.1);
 }
 
 .mct-pillar:nth-child(2),
 .mct-pillar:nth-child(3) {
-  border-color: rgba(234, 43, 161, 0.2);
-  box-shadow: 0 0 30px rgba(234, 43, 161, 0.05);
+  border-color: rgba(234, 43, 161, 0.6);
+  box-shadow: 0 0 25px rgba(234, 43, 161, 0.25), inset 0 0 15px rgba(234, 43, 161, 0.1);
 }
 
 .mct-pillar:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.02);
+  transform: translateY(-8px) scale(1.02);
 }
 
 .mct-pillar-icon {
-  flex: 0 0 120px;
-  height: 120px;
+  flex: 0 0 180px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .mct-pillar-icon img {
-  width: 100%;
-  height: 100%;
+  width: 130%;
+  height: 130%;
   object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.2));
 }
+
 
 .mct-pillar-info {
   flex: 1;
@@ -1205,20 +1214,58 @@
 
 .mct-pillar-title {
   font-family: var(--font-main);
-  font-size: 1.5rem;
+  font-size: clamp(2rem, 3vw, 3rem);
   font-weight: 700;
-  color: #fff;
+  color: #FFFFFF;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  line-height: 1;
 }
 
 .mct-pillar-subtitle {
-  font-family: var(--font-body);
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-main);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: #FFFFFF;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+/* Highlight colors inside cards */
+.mct-pillar:nth-child(1) .prp-highlight,
+.mct-pillar:nth-child(1) .mct-subtitle-accent,
+.mct-pillar:nth-child(4) .prp-highlight,
+.mct-pillar:nth-child(4) .mct-subtitle-accent {
+  color: #00FFFF !important;
+}
+
+.mct-pillar:nth-child(2) .mct-highlight,
+.mct-pillar:nth-child(2) .mct-subtitle-accent,
+.mct-pillar:nth-child(3) .mct-highlight,
+.mct-pillar:nth-child(3) .mct-subtitle-accent {
+  color: #EA2BA1 !important;
+}
+
+.mct-page .mct-hero-footer-note .prp-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.2vw, 1.95rem);
+  text-align: center;
+  color: #FFFFFF !important;
+  margin-top: 5rem;
+  width: 100%;
+  border-left: none !important;
+  padding-left: 0 !important;
   line-height: 1.4;
 }
+
+
+
+
+.mct-page .mct-hero-footer-note .prp-highlight-magenta {
+  color: #EA2BA1 !important;
+}
+
 
 /* Section 8: Exo-Tech Gel Comparison Graphic */
 .mct-gel-comparison-container {
@@ -1255,30 +1302,83 @@
 /* Responsive Styles for MCT Page */
 @media (max-width: 1024px) {
 
+  /* Grid to Flex Column Stacking - REFORZADO MÁXIMO */
+  .mct-page .mct-leap-row,
+  .mct-page .mct-process-grid-v2,
+  .mct-page .mct-selection-flow,
+  .mct-page .mct-selection-columns,
+  .mct-page .mct-pillars-grid,
   .mct-page .mct-comparison-grid,
-  .mct-page .mct-comparison-horizontal,
-  .mct-page .mct-thermo-content,
+  .mct-page .mct-thermo-content-grid,
   .mct-page .mct-evidence-grid,
   .mct-page .mct-gel-comparison,
-  .mct-page .mct-selection-content,
-  .mct-page .mct-pillars-grid {
-    grid-template-columns: 1fr;
+  .mct-page .mct-selection-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    align-items: center !important;
   }
 
-  .mct-page .mct-workflow-steps {
-    flex-direction: column;
+  /* Specific tweaks for Leap Section */
+  .mct-page .mct-leap-content {
+    width: 100% !important;
+    text-align: center;
   }
 
-  .mct-page .mct-workflow-arrow {
-    transform: rotate(90deg);
+  .mct-page .mct-leap-image {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
 
-  .mct-page .mct-process-grid {
-    flex-direction: column;
+  .mct-page .mct-leap-image img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto !important;
+    max-height: 250px;
+    object-fit: contain;
   }
 
-  .mct-page .mct-process-arrow {
-    transform: rotate(90deg);
+  .mct-page .mct-leap-vs {
+    margin: 2rem 0 !important;
+    font-size: 2.5rem !important;
+  }
+
+  /* Arrows and Connectors Rotation */
+  .mct-page .mct-process-arrow,
+  .mct-page .mct-workflow-arrow,
+  .mct-page .mct-flow-connector {
+    transform: rotate(90deg) !important;
+    margin: 2rem auto !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  .mct-page .mct-therapy-separator-box {
+    margin: 2.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mct-page .mct-workflow-steps,
+  .mct-page .mct-process-grid,
+  .mct-page .mct-process-grid-v2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .mct-page .mct-flow-item,
+  .mct-page .mct-flow-center,
+  .mct-page .mct-therapy-column {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
   }
 }
 
@@ -1302,5 +1402,11 @@
 
   .mct-page .mct-comparison-table {
     min-width: 600px;
+  }
+
+  /* Force stack leap items even smaller */
+  .mct-page .mct-leap-comparison {
+    display: flex !important;
+    flex-direction: column !important;
   }
 }
