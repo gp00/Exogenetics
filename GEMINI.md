@@ -40,13 +40,14 @@ All modifications must adhere to the **Protocolo de Automatización**.
 - **SEO & A11y:** Descriptive `alt` attributes, unmasked text, and semantic structure.
 - **Performance:** Aggressive image optimization and minimized code (clean CSS). Usar el skill `optimizar-activos-webp` para gestionar activos visuales.
 - **Browser Interaction:** Para interactuar con la web (auditorías, testing, capturas), se debe usar **obligatoriamente** el skill `agent-browser`. Es superior para manejar estados, referencias de elementos internos y automatización de flujos complejos.
+- **Skills disponibles:** Los scripts de automatización se encuentran en `.agent/skills/` (`optimizar-activos-webp`, `responsive-design`, `agent-browser`, `find-skills`, `creador-de-skills-antigravity`).
 
 ### CSS Design Tokens:
 - **Primary Background:** `#000000`
 - **Secondary Background:** `#212121`
 - **Accent Magenta:** `#EA2BA1`
 - **Accent Blue:** `#1863DC`
-- **Gradients:** Use defined `--grad-vivid-cyan-purple` or `--grad-premium`.  --grad-premium: linear-gradient(135deg, #EA2BA1 0%, #1863DC 100%);
+- **Gradients:** Use defined `--grad-vivid-cyan-purple` or `--grad-premium` (`linear-gradient(135deg, #EA2BA1 0%, #1863DC 100%)`).
 
 ---
 
@@ -57,11 +58,13 @@ Diseñada para establecer autoridad tecnológica y presentar las soluciones de i
 - **Hero/Portal Section**: División clara entre acceso "Area Clínica & Pro" y "Pacientes & Divulgación".
 - **Quiénes Somos (Manifiesto)**: "QUIÉNES SOMOS: LA VANGUARDIA BIOTECNOLÓGICA". Formato narrativo tipo "Carta de Presentación" que integra los pilares tecnológicos (SBL.PRP.3 y MCT SYSTEM) en un discurso fluido. Diseño en contenedor único amplio (1100px).
 - **Productos Destacados**: "EL ESTÁNDAR DE ORO EN MEDICINA AUTÓLOGA". Tarjetas técnicas de alta definición para SBL.PRP.3 y MCT SYSTEM & EXOSOMAS.
+- **Clínicas de Referencia**: Sección de Social Proof con las 3 clínicas colaboradoras (Clínica ME, Traumatología21, Clínica Uribe). Grid de tarjetas con logo, especialidad, equipo médico, datos de contacto y enlace externo. Implementada en `index.html` con clase `.partners-section`.
 
 ### 4.2. Página Pacientes (`pacientes.html`)
 La página `pacientes.html` es el punto de entrada educativo. Se enfoca en conceptos simples y analogías (obreros/arquitectos) para explicar la medicina regenerativa.
 - **Secciones:** Desde "¿Qué es el PRP?" hasta el proceso de una hora "Entras caminando y sales caminando".
 - **Visuales:** Uso intensivo de gemas decorativas y diagramas de procesos.
+- **¿Dónde realizar tu tratamiento?**: Sección final de Social Proof con las 3 clínicas colaboradoras, orientada a la conversión del paciente. Título adaptativo ("¿DÓNDE REALIZAR TU TRATAMIENTO?") diferenciado del B2B de `index.html`.
 
 ### 4.3. Profundización PRP (`pacientesPRP.html`)
 Página técnica-educativa sobre el Plasma Rico en Plaquetas.
